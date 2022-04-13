@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% import "article_header.html" as macros %}
+
+{% block title %}{{ page.title | safe }}{% endblock title %}
+
+<!-- TODO: links to page.earlier and page.later, if they exist -->
+
+{% block content %}
+  <article class="post">
+    {{ macros::article_header(page=page) }}
+    {{ page.content | safe }}
+  </article>
+{% endblock content %}

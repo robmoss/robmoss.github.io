@@ -1,0 +1,6 @@
+<li>
+  {%- if href %}<a href="{{ href }}">{% endif -%}
+    <img src="{{ get_url(path=icon) }}"/>
+  {%- if href %}</a>{% endif -%}
+  {%- if space %}&nbsp;{% endif -%}
+  {{ body | markdown(inline=true) | safe }}</li>

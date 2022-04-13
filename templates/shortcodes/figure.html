@@ -1,0 +1,4 @@
+<figure>
+  <img src="{{ get_url(path=image) }}" alt="{{ title }}"/>
+  <figcaption>{{ body | markdown(inline=true) | safe }}</figcaption>
+</figure>

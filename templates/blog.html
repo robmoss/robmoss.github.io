@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% import "article_header.html" as macros %}
+
+{% block title %}{{ section.title | safe }}{% endblock title %}
+
+{% block content %}
+  {% for page in paginator.pages %}
+  <article class="post">
+    {{ macros::article_header(page=page) }}
+    {% if page.summary %}
+    {{ page.summary | safe }}
+    <footer>
+      <a class="more" href="{{ page.permalink | safe}}">Read more &#187;</a>
+    </footer>
+    {% else %}
+    {{ page.content | safe }}
+    <footer>
+      <a class="more" href="{{ page.permalink | safe}}">View post &#187;</a>
+    </footer>
+    {% endif %}
+  </article>
+  {% endfor %}
+
+  <footer class="pagination">
+    <nav>
+      <!-- TODO: first/prev/next/last? -->
+    {% if paginator.previous %}
+      <a class="previous" rel="prev" href="{{ paginator.previous }}">&laquo; Previous page</a>
+    {% endif %}
+    {% if paginator.next %}
+      <a class="next" rel="next" href="{{ paginator.next }}">Next page &raquo;</a>
+    {% endif %}
+    </nav>
+  </footer>
+{% endblock content %}
