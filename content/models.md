@@ -22,6 +22,12 @@ maths = true
   I am currently working on <a href="https://robmoss.github.io/git-is-my-lab-book/">Git is my lab book</a>, a collection of materials to support early- and mid-career researchers who want to develop their computing skills and make effective use of available tools and infrastructure.
 </div>
 
+## A User's Guide to Infectious Disease Modelling
+
+The PRISM<sup>2</sup> CRE published [A User's Guide to Infectious Disease Modelling](https://prism.edu.au/publications/prism-modeling-guideline/) in 2016.
+This provides an introduction to interpreting the results of mathematical modelling studies in epidemiology.
+The primary target audience is policy makers who want to capitalise on these kinds of studies to inform immunisation policy and the control of vaccine preventable diseases.
+
 ## Interactive epidemic models
 
 - This [interactive SEIR demo](https://robmoss.github.io/seir-demo/) illustrates how epidemiological parameters, such as the basic reproduction number, affect the size and duration of an epidemic.
