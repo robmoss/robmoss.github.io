@@ -223,7 +223,6 @@ code {
 
 /* Code blocks. */
 pre {
-    overflow: auto;
     margin: 0 auto;
     padding: 0;
     text-align: left;
@@ -232,6 +231,7 @@ pre {
     background-color: inherit !important;
 }
 pre code {
+    overflow: auto;
     display: block;
     margin: 0;
     padding: 0.5rem 0.5rem;
