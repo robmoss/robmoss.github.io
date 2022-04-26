@@ -8,20 +8,26 @@ maths = true
 # Publications
 
 <ul class="publication-list">
+
+## 2022
+
 <li class="epi">
   <a href="https://doi.org/10.3389/fevo.2022.792749">From climate change to pandemics: decision science can help scientists have impact</a><br/>
   <span class="author">Baker CM&#9993;, Campbell PT, Chades I, Dean AJ, Hester SM, Holden MH, McCaw JM, McVernon J, <strong>Moss R</strong>, Shearer FM, Possingham HP</span><br/>
   <span class="journal"><strong>Frontiers in Ecology and Evolution</strong>, 10: 792749, 2022.</span><br/>
 </li>
 <li class="epi">
-  <a href="https://doi.org/10.1016/j.epidem.2021.100478">Development of an influenza pandemic decision support tool linking situational analytics to national response policy</a><br/>
-  <span class="author">Shearer FM&#9993;, <strong>Moss R</strong>, Price DJ, Zarebski AE, Ballard PG, McVernon J, Ross JV, McCaw JM</span><br/>
-  <span class="journal"><strong>Epidemics</strong>, 36: 100478, 2021.</span><br/>
-</li>
-<li class="epi">
   <a href="https://doi.org/10.1016/j.ijforecast.2021.01.028">Commentary on "Transparent modeling of influenza incidence": Because the model said so</a><br/>
   <span class="author"><strong>Moss R</strong>&#9993;</span><br/>
   <span class="journal"><strong>International Journal of Forecasting</strong>, 38: 620–621, 2022.</span><br/>
+</li>
+
+## 2021
+
+<li class="epi">
+  <a href="https://doi.org/10.1016/j.epidem.2021.100478">Development of an influenza pandemic decision support tool linking situational analytics to national response policy</a><br/>
+  <span class="author">Shearer FM&#9993;, <strong>Moss R</strong>, Price DJ, Zarebski AE, Ballard PG, McVernon J, Ross JV, McCaw JM</span><br/>
+  <span class="journal"><strong>Epidemics</strong>, 36: 100478, 2021.</span><br/>
 </li>
 <li class="epi">
   <a href="https://doi.org/10.1016/j.vaccine.2020.12.053">Constructing an ethical framework for priority allocation of pandemic vaccines</a><br/>
@@ -38,6 +44,9 @@ maths = true
   <span class="author">Nation ML, <strong>Moss R</strong>, Spittal MJ, Kotsimbos T, Kelly PM, Cheng AC&#9993;</span><br/>
   <span class="journal"><strong>Clin Infect Dis</strong>, 72(1): 99–107, 2021.</span><br/>
 </li>
+
+## 2020
+
 <li class="epi">
   <a href="https://doi.org/10.3201/eid2612.202530">Coronavirus Disease Model to Inform Transmission Reducing Measures and Health System Preparedness, Australia</a><br/>
   <span class="author"><strong>Moss R</strong>, Wood J, Brown D, Shearer FM, Black AJ, Cheng AC, McCaw JM, McVernon J&#9993;</span><br/>
@@ -68,6 +77,9 @@ maths = true
   <span class="author">Shearer FM, <strong>Moss R</strong>, McVernon J, Ross JV, McCaw JM&#9993;</span><br/>
   <span class="journal"><strong>PLoS Med</strong>, 17: e1003018, 2020.</span><br/>
 </li>
+
+## 2019
+
 <li class="epi">
   <a href="https://doi.org/10.1111/irv.12649">Optimal Timing of Influenza Vaccine during Pregnancy: a Systematic Review and Meta-Analysis</a><br/>
   <span class="author">Cuningham W&#9993;, Geard N, Fielding JE, Braat S, Madhi SA, Nunes MC, Christian LM, Lin S-Y, Lee C-N, Yamaguchi K, Bisgaard H, Chawes B, Chao A-S, Blanchard-Rohner G, Schlaudecker EP, Fisher BM, McVernon J, <strong>Moss R</strong></span><br/>
@@ -88,11 +100,17 @@ maths = true
   <span class="author"><strong>Moss R</strong>&#9993;, Zarebski AE, Carlson SJ, McCaw JM</span><br/>
   <span class="journal"><strong>Trop Med Infect Dis</strong>, 4(1): 12, 2019.</span><br/>
 </li>
+
+## 2018
+
 <li class="epi">
   <a href="https://doi.org/10.1111/1753-6405.12750">Epidemic forecasts as a tool for public health: interpretation and (re)calibration</a><br/>
   <span class="author"><strong>Moss R</strong>&#9993;, Fielding JE, Stephens N, McVernon J, Dawson P, McCaw JM</span><br/>
   <span class="journal"><strong>Aust N Z J Public Health</strong>, 42(1): 69–76, 2018.</span><br/>
 </li>
+
+## 2017
+
 <li class="epi">
   <a href="https://doi.org/10.1016/j.idm.2016.12.004">Model selection for seasonal influenza forecasting</a><br/>
   <span class="author">Zarebski AE, Dawson P, McCaw JM, <strong>Moss R</strong>&#9993;</span><br/>
@@ -103,6 +121,9 @@ maths = true
   <span class="author"><strong>Moss R</strong>&#9993;, Zarebski AE, Dawson P, McCaw JM</span><br/>
   <span class="journal"><strong>Epidemiol Infect</strong>, 145(1): 156–169, 2017.</span><br/>
 </li>
+
+## 2016
+
 <li class="epi">
   <a href="https://doi.org/10.1186/s12879-016-1866-7">Reducing disease burden in an influenza pandemic by targeted delivery of neuraminidase inhibitors: mathematical models in the Australian context</a><br/>
   <span class="author"><strong>Moss R</strong>&#9993;, McCaw JM, Cheng AC, Hurt AC, McVernon J</span><br/>
@@ -118,11 +139,17 @@ maths = true
   <span class="author"><strong>Moss R</strong>&#9993;, Zarebski AE, Dawson P, McCaw JM</span><br/>
   <span class="journal"><strong>Influenza Other Respir Viruses</strong>, 10(4): 314–323, 2016.</span><br/>
 </li>
+
+## 2015
+
 <li class="epi">
   <a href="https://doi.org/10.1371/journal.pcbi.1004334">Innate immunity and the inter-exposure interval determine the dynamics of secondary influenza virus infection and explain observed viral hierarchies</a><br/>
   <span class="author">Cao P, Yan AWC, Heffernan JM, Petrie S, <strong>Moss R</strong>, Carolan LA, Guarnaccia TA, Kelso A, Barr IG, McVernon J, Laurie KL, McCaw JM&#9993;</span><br/>
   <span class="journal"><strong>PLoS Comp Biol</strong>, 11(8): e1004334, 2015.</span><br/>
 </li>
+
+## 2014
+
 <li class="renal">
   <a href="https://doi.org/10.1152/ajprenal.00500.2013">Dominant factors that govern pressure natriuresis in diuresis and antidiuresis: a mathematical model</a><br/>
   <span class="author"><strong>Moss R</strong>&#9993;, Layton AT</span><br/>
@@ -133,6 +160,9 @@ maths = true
   <span class="author"><strong>Moss R</strong>&#9993;, Thomas SR</span><br/>
   <span class="journal"><strong>AJP Renal Physiol</strong>, 306(2): F224–248, 2014.</span><br/>
 </li>
+
+## 2012
+
 <li class="epi">
   <a href="https://doi.org/10.1016/j.epidem.2012.12.002">Drivers and consequences of influenza antiviral resistant-strain emergence in a capacity-constrained pandemic response</a><br/>
   <span class="author">Dafilis MP&#9993;, <strong>Moss R</strong>, McVernon J, McCaw JM</span><br/>
@@ -148,6 +178,9 @@ maths = true
   <span class="author">Bolton KJ&#9993;, McCaw JM, <strong>Moss R</strong>, Morris RS, Wang S, Burma A, Darma B, Narangerel D, Nymadawa P, McVernon J</span><br/>
   <span class="journal"><strong>Bull WHO</strong>, 90(4): 264–271, 2012.</span><br/>
 </li>
+
+## 2011
+
 <li class="renal">
   <a href="https://doi.org/10.1016/j.pbiomolbio.2011.06.008">Integration of detailed modules in a core model of body fluid homeostasis and blood pressure regulation</a><br/>
   <span class="author">Hernández AI&#9993;, Le Rolle V, Ojeda D, Baconnier P, Fontecave-Jallon J, Guillaud F, Grosse T, <strong>Moss R</strong>, Hannaert P, Thomas SR</span><br/>
@@ -163,6 +196,9 @@ maths = true
   <span class="author"><strong>Moss R</strong>&#9993;, McCaw JM, McVernon J</span><br/>
   <span class="journal"><strong>PLoS ONE</strong>, 6(2): e14505, 2011.</span><br/>
 </li>
+
+## 2009
+
 <li class="renal">
   <a href="https://doi.org/10.1016/j.physd.2009.08.015">Discrete network models of interacting nephrons</a><br/>
   <span class="author"><strong>Moss R</strong>&#9993;, Kazmierczak E, Kirley M, Harris PJ</span><br/>
@@ -178,6 +214,9 @@ maths = true
   <span class="author"><strong>Moss R</strong>, Kazmierczak E&#9993;, Kirley M, Harris PJ</span><br/>
   <span class="journal"><strong>Phil Trans R Soc A</strong>, 367(1896): 2125–2140, 2009.</span><br/>
 </li>
+
+## 2008
+
 <li class="epi">
   <a href="http://repository.unimelb.edu.au/10187/3529">A Clockwork Kidney: Using hierarchical dynamical networks to model emergent dynamics in the kidney</a><br/>
   <span class="author"><strong>Moss R</strong></span><br/>
