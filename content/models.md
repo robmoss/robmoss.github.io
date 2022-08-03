@@ -52,7 +52,7 @@ Making the model source code available is necessary **but insufficient** to rend
 This has led to a proliferation of [semantic](http://sed-ml.org/) [markup](http://sbml.org/) [languages](http://www.cellml.org/) and
 [detailed](http://co.mbine.org/standards/miriam) [guidelines](http://biomodels.net/miase/) for describing models and *in silico* experiments.
 
-The importance of clear, concise and [helpful documentation](https://web.archive.org/web/20200606231144/https://documentation.divio.com/) is [paramount](https://web.archive.org/web/20200618075304/https://jacobian.org/tags/great-documentation/) to ensuring a published model and results can be **replicated independently** of the original model implementation.
+The importance of clear, concise and [helpful](https://diataxis.fr/) [documentation](https://web.archive.org/web/20200606231144/https://documentation.divio.com/) is [paramount](https://web.archive.org/web/20200618075304/https://jacobian.org/tags/great-documentation/) to ensuring a published model and results can be **replicated independently** of the original model implementation.
 It can be hard to write [good prose](http://web.archive.org/web/20170614175347/http://www.americanscientist.org/issues/id.877,y.0,no.,content.true,page.1,css.print/issue.aspx) and to *teach* the user rather than simply [telling them](http://stevelosh.com/blog/2013/09/teach-dont-tell/) what to do.
 Explanations can be [confusing and difficult to understand](https://web.archive.org/web/20210819195037/https://jvns.ca/blog/confusing-explanations/).
 That's why it's important a have good editor; only edit the documentation [yourself](http://web.archive.org/web/20140616001452/http://lifehacker.com/5968996/how-to-edit-your-own-writing/all) as a last resort.
