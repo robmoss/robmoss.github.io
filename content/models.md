@@ -49,8 +49,7 @@ Before I came to infectious diseases epidemiology, I modelled how kidneys regula
 As mathematical models grow larger and more complex they become harder to analyse and understand.
 Once a model is sufficiently complex, the likelihood of someone being able to replicate its behaviour based on the model description in a publication becomes negligible.
 Making the model source code available is necessary **but insufficient** to render a model comprehensible.
-This has led to a proliferation of [semantic](http://sed-ml.org/) [markup](http://sbml.org/) [languages](http://www.cellml.org/) and
-[detailed](http://co.mbine.org/standards/miriam) [guidelines](http://biomodels.net/miase/) for describing models and *in silico* experiments.
+This has led to a proliferation of [semantic](https://sed-ml.org/) [markup](https://sbml.org/) [languages](https://www.cellml.org/) and [detailed](https://co.mbine.org/standards/miriam) [guidelines](https://co.mbine.org/standards/miase) for describing models and *in silico* experiments.
 
 The importance of clear, concise and [helpful](https://diataxis.fr/) [documentation](https://web.archive.org/web/20200606231144/https://documentation.divio.com/) is [paramount](https://web.archive.org/web/20200618075304/https://jacobian.org/tags/great-documentation/) to ensuring a published model and results can be **replicated independently** of the original model implementation.
 It can be hard to write [good prose](http://web.archive.org/web/20170614175347/http://www.americanscientist.org/issues/id.877,y.0,no.,content.true,page.1,css.print/issue.aspx) and to *teach* the user rather than simply [telling them](http://stevelosh.com/blog/2013/09/teach-dont-tell/) what to do.
