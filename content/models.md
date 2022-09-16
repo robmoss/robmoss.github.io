@@ -19,7 +19,7 @@ maths = true
     <a href="https://gitlab.unimelb.edu.au/rgmoss/" title="Gitlab profile"><img src="/images/logo-gl.png"></a>
   </nav>
   <!-- NOTE: the following is HTML, not Markdown, to avoid it becoming a paragraph and having undesired vertical space above and below. -->
-  I am currently working on <a href="https://robmoss.github.io/git-is-my-lab-book/">Git is my lab book</a>, a collection of materials to support early- and mid-career researchers who want to develop their computing skills and make effective use of available tools and infrastructure.
+  I am currently working on <a href="https://git-is-my-lab-book.net/">Git is my lab book</a>, a collection of materials to support early- and mid-career researchers who want to develop their computing skills and make effective use of available tools and infrastructure.
 </div>
 
 ## A User's Guide to Infectious Disease Modelling
