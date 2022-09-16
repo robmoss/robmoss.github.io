@@ -262,10 +262,115 @@ pre mark {
     background-color:white !important;
 }
 
-/* Figures with captions */
+/* Figures with captions. */
 .figure {
     max-width: 40em;
     margin: 0 auto;
     padding: 1.5em 0;
     text-align: center;
+}
+
+/*****************************************************************************
+  Interactive plots, such as renal function curves.
+*****************************************************************************/
+
+/* Floating tooltip appearance. */
+.tooltip {
+    font-size: 0.8rem;
+    line-height: 1.25em;
+    padding: 0.5em 0.75em; border-radius: 1em;
+    position: absolute;
+    background-color: var(--bg-highlight);
+    max-width: 30em;
+}
+
+/* Hide elements that will be revealed by scripts. */
+.showjs { display: none; }
+
+/* Define common colours, based on the Tomorrow colour palette.
+   See https://github.com/purcell/color-theme-sanityinc-tomorrow */
+:root {
+    --bg-base: #ffffff;
+    --bg-highlight: #efefef;
+    --fg-base: #4d4d4c ;
+    --fg-highlight: #2e2e2e;
+    --fg-blue: #3182bd;
+    --fg-green: #718c00;
+    --fg-red: #c82829;
+}
+
+.plot svg { font-size: 0.875em; }
+.plot line, .plot .axis, .plot .xTicks, .plot .yTicks { stroke: var(--fg-highlight); }
+.plot line.grid { stroke-width: 0.1; }
+.plot text { fill: var(--fg-highlight); }
+.plot .axis { stroke-width: 0.8; }
+.plot .xTicks, .plot .yTicks { stroke-width: 0.6; }
+.plot path {
+    stroke: var(--fg-blue);
+    stroke-width: 2;
+    fill: none;
+}
+/* Note: the following rules are specific to renal function plots. */
+.plot path.model {
+    stroke: var(--fg-green);
+    stroke-width: 3;
+    fill: none;
+}
+.plot path.hull {
+    stroke: none;
+    fill: var(--fg-blue);
+    opacity: 0.2;
+    pointer-events: none;
+}
+.plot rect.model { fill: var(--fg-green); }
+.plot rect.exp { fill: var(--fg-blue); }
+.plot path#highlight {
+    stroke: var(--fg-red);
+    stroke-width: 5;
+}
+
+/*****************************************************************************
+  Plot legends, shown as fixed sidebars.
+*****************************************************************************/
+
+#plot-legend  {
+    position: fixed;
+    top: 4em;
+    left: 0em;
+    width: auto;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border-top-left-radius: 0em;
+    border-bottom-left-radius: 0em;
+    background: var(--bg-highlight);
+    border: 5px solid var(--fg-base);
+    border-left: 0;
+}
+#plot-legend caption {
+    margin-bottom: 1em;
+}
+#plot-legend table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 1em 1em;
+    line-height: 1.5em;
+}
+#plot-legend th, #plot-legend td {
+    padding: 0.1em 0.25em;
+    padding-right: 1em;
+}
+#plot-legend th, #plot-legend .toggle {
+    text-align: center;
+}
+#plot-legend .odd {
+    background: inherit;
+}
+#plot-legend .even {
+    background: var(--bg-base);
+}
+#plot-legend .showyes * {
+    color: var(--fg-green);
+}
+#plot-legend .showno * {
+    color: var(--fg-red);
 }
