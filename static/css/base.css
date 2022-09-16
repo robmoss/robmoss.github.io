@@ -261,3 +261,11 @@ pre mark {
     display: block;
     background-color:white !important;
 }
+
+/* Figures with captions */
+.figure {
+    max-width: 40em;
+    margin: 0 auto;
+    padding: 1.5em 0;
+    text-align: center;
+}

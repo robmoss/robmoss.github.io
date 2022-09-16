@@ -42,7 +42,7 @@ Before I came to infectious diseases epidemiology, I modelled how kidneys regula
 
 - I developed a whole-kidney model that predicted steady-state salt and water excretion rates in response to renal pressure and circulating hormone levels, as illustrated in these [interactive plots](http://web.archive.org/web/20201212124457/https://robmoss.github.io/model/rfc/).
 
-- I added an explicit glomerular capillary bed to an existing model of afferent arteriole autoregulation, in order to predict the [glomerular filtration rate](http://web.archive.org/web/20201212124458/https://robmoss.github.io/model/aa-autoreg/).
+- I added an explicit glomerular capillary bed to an existing model of afferent arteriole autoregulation, in order to predict the [glomerular filtration rate](@/models/aa-autoreg/index.md).
 
 ## Making models accessible and useful
 
