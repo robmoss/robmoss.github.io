@@ -168,7 +168,8 @@ ul.icon-list {
 }
 
 img.network {
-    max-width: 9em;
+    max-width: 8em;
+    max-height: 4em;
     vertical-align: middle;
     margin: 0;
     padding: 0;

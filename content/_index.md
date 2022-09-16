@@ -92,4 +92,6 @@ epidemic scenario modelling in Python
 
 ## Research networks
 
-<a class="network" href="https://www.apprise.org.au/"><img class="network" src="/images/network-apprise.png"/></a><a class="network" href="https://www.spectrum.edu.au/"><img class="network" src="/images/network-spectrum.png"/></a><a class="network" href="https://www.spark.edu.au/"><img class="network" src="/images/network-spark.png"/></a><a class="network" href="https://info.flutracking.net/"><img class="network" src="/images/network-flutracking.png"/></a><a class="network" href="https://www.prism.edu.au/"><img class="network" src="/images/network-prism.jpg"/></a>
+<div class="narrow-list">
+<a class="network" href="https://www.apprise.org.au/"><img class="network" src="/images/network-apprise.png"/></a><a class="network" href="https://www.spectrum.edu.au/"><img class="network" src="/images/network-spectrum.png"/></a><a class="network" href="https://www.spark.edu.au/"><img class="network" src="/images/network-spark.png"/></a><a class="network" href="https://info.flutracking.net/"><img class="network" src="/images/network-flutracking.png"/></a><a class="network" href="https://www.prism.edu.au/"><img class="network" src="/images/network-prism.jpg"/></a><a class="network" href="https://rse-aunz.github.io/"><img class="network" src="/images/network-rse-aunz.png"/></a>
+</div>
