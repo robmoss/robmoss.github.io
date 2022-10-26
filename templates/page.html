@@ -1,7 +1,13 @@
 {% extends "base.html" %}
 
+{% import "source_link.html" as source %}
+
 {% block title %}{{ page.title | safe }}{% endblock title %}
 
 {% block content %}
 {{ page.content | safe }}
 {% endblock content %}
+
+{% block source -%}
+{{ source::source_link(page=page) }}
+{%- endblock source %}

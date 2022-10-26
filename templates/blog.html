@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% import "article_header.html" as macros %}
+{% import "source_link.html" as source %}
 
 {% block title %}{{ section.title | safe }}{% endblock title %}
 
@@ -34,3 +35,7 @@
     </nav>
   </footer>
 {% endblock content %}
+
+{% block source -%}
+{{ source::source_link(page=section) }}
+{%- endblock source %}

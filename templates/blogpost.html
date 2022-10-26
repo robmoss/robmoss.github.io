@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% import "article_header.html" as macros %}
+{% import "source_link.html" as source %}
 
 {% block title %}{{ page.title | safe }}{% endblock title %}
 
@@ -12,3 +13,7 @@
     {{ page.content | safe }}
   </article>
 {% endblock content %}
+
+{% block source -%}
+{{ source::source_link(page=page) }}
+{%- endblock source %}
