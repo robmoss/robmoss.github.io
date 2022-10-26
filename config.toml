@@ -27,3 +27,5 @@ navigation = [
   { name = "Models", url = "@/models.md", image = "model.png" },
   { name = "Blog", url = "@/blog/_index.md", image = "info.png" },
 ]
+# The root directory for source links (see `templates/source_link.html`).
+source_root = "https://github.com/robmoss/robmoss.github.io/tree/master/content"

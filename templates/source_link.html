@@ -1,5 +1,5 @@
 {%- macro source_link(page) -%}
 {%- if page.relative_path -%}
-&nbsp;/ <a href="https://github.com/robmoss/robmoss.github.io/tree/master/content/{{ page.relative_path }}">source</a>
+&nbsp;/ <a href="{{ config.extra.source_root }}/{{ page.relative_path }}">source</a>
 {%- endif -%}
 {%- endmacro source_link -%}
