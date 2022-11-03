@@ -218,7 +218,7 @@ maths = true
 ## 2008
 
 <li class="epi">
-  <a href="http://repository.unimelb.edu.au/10187/3529">A Clockwork Kidney: Using hierarchical dynamical networks to model emergent dynamics in the kidney</a><br/>
+  <a href="http://hdl.handle.net/11343/35092">A Clockwork Kidney: Using hierarchical dynamical networks to model emergent dynamics in the kidney</a><br/>
   <span class="author"><strong>Moss R</strong></span><br/>
   <span class="journal"><strong>Ph.D. Thesis</strong>, 2008.</span><br/>
 </li></ul>
