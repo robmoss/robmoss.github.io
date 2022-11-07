@@ -214,6 +214,10 @@ a.network:hover img {
 
 figure {
     text-align: center;
+    /* Add vertical space around figures. */
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border-bottom: 1px solid #afafaf;
 }
 
 /* Inline code. */
