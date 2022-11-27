@@ -33,9 +33,9 @@ maths = true
 <br/>
 <a href="http://orcid.org/0000-0002-4568-2012" title="ORCID record">ORCID</a>
   / <a href="https://scholar.google.com/citations?user=NOX2J-EAAAAJ&hl=en" title="Google Scholar profile">Google</a>
+  / <a href="https://www.semanticscholar.org/author/46303559" title="Semantic Scholar profile">Semantic Scholar</a>
   / <a href="https://www.scopus.com/authid/detail.uri?authorId=28167595000" title="Scopus author details">Scopus</a>
-  / <a href="http://www.researcherid.com/rid/R-4767-2018" title="ResearcherID profile">ResearcherID</a>
-  / <a href="https://publons.com/author/1582791/" title="Publons profile">Publons</a>
+  / <a href="https://www.webofscience.com/wos/author/rid/R-4767-2018" title="Web of Science profile">Web of Science</a>
 </div>
 </div>
 
