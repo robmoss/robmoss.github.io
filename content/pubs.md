@@ -12,6 +12,11 @@ maths = true
 ## 2022
 
 <li class="epi">
+  <a href="https://doi.org/10.1101/2022.08.04.22278391v1">Forecasting COVID-19 activity in Australia to support pandemic response: May to October 2020</a><br/>
+  <span class="author"><strong>Moss R</strong>&#9993;, Price DJ, Golding N, Dawson P, McVernon J, Hyndman RJ, Shearer FM, McCaw JM</span><br/>
+  <span class="journal"><em>Preprint</em>.</span><br/>
+</li>
+<li class="epi">
   <a href="https://doi.org/10.3389/fevo.2022.792749">From climate change to pandemics: decision science can help scientists have impact</a><br/>
   <span class="author">Baker CM&#9993;, Campbell PT, Chades I, Dean AJ, Hester SM, Holden MH, McCaw JM, McVernon J, <strong>Moss R</strong>, Shearer FM, Possingham HP</span><br/>
   <span class="journal"><strong>Frontiers in Ecology and Evolution</strong>, 10: 792749, 2022.</span><br/>
