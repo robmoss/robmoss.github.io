@@ -9,10 +9,18 @@ maths = true
 
 <ul class="publication-list">
 
+## 2023
+
+<li class="epi">
+  <a href="https://doi.org/10.1101/2023.04.02.23288053">The re-emergence of influenza following the COVID-19 pandemic in Victoria, Australia</a><br/>
+  <span class="author">Pendrey CGA&#9993;, Strachan J, Peck H, Aziz A, Moselen J, <strong>Moss R</strong>, Rahaman MR, Barr IG, Subbarao K, Sullivan SG</span><br/>
+  <span class="journal"><em>Preprint</em>.</span><br/>
+</li>
+
 ## 2022
 
 <li class="epi">
-  <a href="https://doi.org/10.1101/2022.08.04.22278391v1">Forecasting COVID-19 activity in Australia to support pandemic response: May to October 2020</a><br/>
+  <a href="https://doi.org/10.1101/2022.08.04.22278391">Forecasting COVID-19 activity in Australia to support pandemic response: May to October 2020</a><br/>
   <span class="author"><strong>Moss R</strong>&#9993;, Price DJ, Golding N, Dawson P, McVernon J, Hyndman RJ, Shearer FM, McCaw JM</span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
 </li>
