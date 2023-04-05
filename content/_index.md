@@ -48,7 +48,7 @@ This includes:
 - Using **scenario modelling to inform recommendations** for specific interventions, such as targeted antiviral distribution; and
 - Synthesising models and surveillance data to generate **near-real-time epidemic forecasts**.
 
-I am a proponent of [Reproducible Research](https://en.wikipedia.org/wiki/Reproducibility), [Open Access](https://en.wikipedia.org/wiki/Open_access), and [Free and Open Source Software](https://en.wikipedia.org/wiki/Free_and_open-source_software), and have produced several open source software packages through my research activities ([listed below](#open-source-software-packages)).
+I am a proponent of [Reproducible Research](https://en.wikipedia.org/wiki/Reproducibility), [Open Access](https://en.wikipedia.org/wiki/Open_access), and [Free and Open Source Software](https://en.wikipedia.org/wiki/Free_and_open-source_software), and produce open source software packages through my research activities ([listed below](#open-source-software-packages)).
 
 > *A model that cannot be explained should not inform decisions that require justification.*
 >
