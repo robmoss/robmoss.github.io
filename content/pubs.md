@@ -16,14 +16,14 @@ maths = true
   <span class="author">Pendrey CGA&#9993;, Strachan J, Peck H, Aziz A, Moselen J, <strong>Moss R</strong>, Rahaman MR, Barr IG, Subbarao K, Sullivan SG</span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
 </li>
+<li class="epi">
+  <a href="https://doi.org/10.1038/s41598-023-35668-6">Forecasting COVID-19 activity in Australia to support pandemic response: May to October 2020</a><br/>
+  <span class="author"><strong>Moss R</strong>&#9993;, Price DJ, Golding N, Dawson P, McVernon J, Hyndman RJ, Shearer FM, McCaw JM</span><br/>
+  <span class="journal"><strong>Scientific Reports</strong>, 13: 8763, 2023.</span><br/>
+</li>
 
 ## 2022
 
-<li class="epi">
-  <a href="https://doi.org/10.1101/2022.08.04.22278391">Forecasting COVID-19 activity in Australia to support pandemic response: May to October 2020</a><br/>
-  <span class="author"><strong>Moss R</strong>&#9993;, Price DJ, Golding N, Dawson P, McVernon J, Hyndman RJ, Shearer FM, McCaw JM</span><br/>
-  <span class="journal"><em>Preprint</em>.</span><br/>
-</li>
 <li class="epi">
   <a href="https://doi.org/10.3389/fevo.2022.792749">From climate change to pandemics: decision science can help scientists have impact</a><br/>
   <span class="author">Baker CM&#9993;, Campbell PT, Chades I, Dean AJ, Hester SM, Holden MH, McCaw JM, McVernon J, <strong>Moss R</strong>, Shearer FM, Possingham HP</span><br/>
