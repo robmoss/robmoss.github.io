@@ -36,6 +36,8 @@ The primary target audience is policy makers who want to capitalise on these kin
   It is designed for use in a talk or presentation, where the model population size can be set to the number of people in the audience \\(N\\), each of whom should be given a unique number from \\(\{1 \dots N\}\\).
   A [simplified interface](https://robmoss.github.io/sir-demo/simple.html) is also provided.
 
+- The [NRICH Project](https://nrich.maths.org/) offers a variety of [interactive teaching resources](https://nrich.maths.org/epidemic).
+
 ## Renal physiology models
 
 Before I came to infectious diseases epidemiology, I modelled how kidneys regulate water and salt balance.
