@@ -68,23 +68,36 @@ I am a proponent of [Reproducible Research](https://en.wikipedia.org/wiki/Reprod
 <ul class="icon-list">
 {% icon_list_item(
      icon="/images/logo-pypfilt-bordered-36.png",
+     alt="pypfilt logo",
      space=true) %}
   bootstrap particle filter for Python
   ([docs](https://pypfilt.readthedocs.io/))
 {% end %}
-{% icon_list_item(icon="/images/logo-epifx-bordered-36.png", space=true) %}
+{% icon_list_item(
+     icon="/images/logo-epifx-bordered-36.png",
+     alt="epifx logo",
+     space=true) %}
   epidemic forecasting in Python
   ([docs](https://epifx.readthedocs.io/))
 {% end %}
-{% icon_list_item(icon="/images/logo-episcen-bordered-36.png", space=true) %}
+{% icon_list_item(
+     icon="/images/logo-episcen-bordered-36.png",
+     alt="episcen logo",
+     space=true) %}
 epidemic scenario modelling in Python
   ([docs](https://episcen.readthedocs.io/))
 {% end %}
-{% icon_list_item(icon="/images/logo-lhs-bordered-36.png", space=true) %}
+{% icon_list_item(
+     icon="/images/logo-lhs-bordered-36.png",
+     alt="lhs logo",
+     space=true) %}
   Latin hypercube sampler
   ([docs](https://lhs.readthedocs.io/))
 {% end %}
-{% icon_list_item(icon="/images/logo-parq-bordered-36.png", space=true) %}
+{% icon_list_item(
+     icon="/images/logo-parq-bordered-36.png",
+     alt="parq logo",
+     space=true) %}
   multi-process job queue
   ([docs](https://parq.readthedocs.io/))
 {% end %}
@@ -94,5 +107,5 @@ epidemic scenario modelling in Python
 ## Research networks
 
 <div class="narrow-list">
-<a class="network" href="https://www.apprise.org.au/"><img class="network" src="/images/network-apprise.png"/></a><a class="network" href="https://www.spectrum.edu.au/"><img class="network" src="/images/network-spectrum.png"/></a><a class="network" href="https://www.spark.edu.au/"><img class="network" src="/images/network-spark.png"/></a><a class="network" href="https://info.flutracking.net/"><img class="network" src="/images/network-flutracking.png"/></a><a class="network" href="https://www.prism.edu.au/"><img class="network" src="/images/network-prism.jpg"/></a><a class="network" href="https://rse-aunz.github.io/"><img class="network" src="/images/network-rse-aunz.png"/></a>
+<a class="network" href="https://www.apprise.org.au/"><img alt="APPRISE logo" class="network" src="/images/network-apprise.png"/></a><a class="network" href="https://www.spectrum.edu.au/"><img alt="SPECTRUM logo" class="network" src="/images/network-spectrum.png"/></a><a class="network" href="https://www.spark.edu.au/"><img alt="SPARK logo" class="network" src="/images/network-spark.png"/></a><a class="network" href="https://info.flutracking.net/"><img alt="Flutracking logo" class="network" src="/images/network-flutracking.png"/></a><a class="network" href="https://www.prism.edu.au/"><img alt="PRISM logo" class="network" src="/images/network-prism.jpg"/></a><a class="network" href="https://rse-aunz.github.io/"><img alt="RSE-AUNZ logo" class="network" src="/images/network-rse-aunz.png"/></a>
 </div>
