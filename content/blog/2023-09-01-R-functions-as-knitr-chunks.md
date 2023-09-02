@@ -26,7 +26,7 @@ read_all_function_chunks("./R/utils.R")
 ```
 ~~~
 
-In this example, `./R/utils.R` should define the functions `name_1()` and `name_2()`.
+In this example, `./R/utils.R` should define the functions `function_name_1()` and `function_name_2()`.
 Note that underscores are replaced by dashes in the chunk names, so that they will work properly when exporting to PDF via LaTeX.
 
 ```R
