@@ -12,9 +12,9 @@ maths = true
 <address>
   <span class="position">
     Senior Research Fellow <br>
-    <a href="http://epi.unimelb.edu.au/">Centre for Epidemiology and
+    <a href="https://epi.unimelb.edu.au/">Centre for Epidemiology and
       Biostatistics</a><br>
-    <a href="http://pgh.unimelb.edu.au/">Melbourne School of
+    <a href="https://mspgh.unimelb.edu.au/">Melbourne School of
       Population and Global Health</a><br>
     The University of Melbourne
   </span>
@@ -31,7 +31,7 @@ maths = true
 <a href="cv_online.pdf">Curriculum Vitæ</a>
   / <a href="/pubs">Publications</a>
 <br/>
-<a href="http://orcid.org/0000-0002-4568-2012" title="ORCID record">ORCID</a>
+<a href="https://orcid.org/0000-0002-4568-2012" title="ORCID record">ORCID</a>
   / <a href="https://scholar.google.com/citations?user=NOX2J-EAAAAJ&hl=en" title="Google Scholar profile">Google</a>
   / <a href="https://www.semanticscholar.org/author/46303559" title="Semantic Scholar profile">Semantic Scholar</a>
   / <a href="https://www.lens.org/lens/orcid/0000-0002-4568-2012/scholar" title="Lens profile">Lens</a>
