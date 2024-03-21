@@ -14,7 +14,7 @@ maths = true
 <li class="epi">
   <a href="https://doi.org/10.2807/1560-7917.ES.2023.28.37.2300118">The re-emergence of influenza following the COVID-19 pandemic in Victoria, Australia</a><br/>
   <span class="author">Pendrey CGA&#9993;, Strachan J, Peck H, Aziz A, Moselen J, <strong>Moss R</strong>, Rahaman MR, Barr IG, Subbarao K, Sullivan SG</span><br/>
-  <span class="journal"> 28(37): 2300118, 2023.</span><br/>
+  <span class="journal"><strong>Eurosurveillance</strong>, 28(37): 2300118, 2023.</span><br/>
 </li>
 <li class="epi">
   <a href="https://doi.org/10.1038/s41598-023-35668-6">Forecasting COVID-19 activity in Australia to support pandemic response: May to October 2020</a><br/>
