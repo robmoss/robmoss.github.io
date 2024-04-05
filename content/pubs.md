@@ -9,6 +9,14 @@ maths = true
 
 <ul class="publication-list">
 
+## 2024
+
+<li class="epi">
+  <a href="https://doi.org/10.21105/joss.06276">pypfilt: a particle filter for Python</a><br/>
+  <span class="author"><strong>Moss R</strong>&#9993;</span><br/>
+  <span class="journal"><strong>Journal of Open Source Software</strong>, 9(96): 6276, 2024.</span><br/>
+</li>
+
 ## 2023
 
 <li class="epi">
