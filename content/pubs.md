@@ -12,6 +12,16 @@ maths = true
 ## 2024
 
 <li class="epi">
+  <a href="https://doi.org/10.48550/arXiv.2405.13239">Jump-Switch-Flow: hybrid stochastic-deterministic solutions of compartmental models</a><br/>
+  <span class="author">Germano DPJ<sup>&dagger;</sup>, Zarebski AE<sup>&dagger;</sup>, Hautphenne S, <strong>Moss R</strong>, Flegg JA, Flegg MB</span><br/>
+  <span class="journal"><em>Preprint</em>.</span><br/>
+</li>
+<li class="epi">
+  <a href="https://doi.org/10.33321/cdi.2024.48.47">Opportunities to strengthen respiratory virus surveillance systems in Australia: lessons learned from the COVID-19 response</a><br/>
+  <span class="author">Shearer FM&#9993;, Edwards L, Kirk M, Eales O, Golding N, Hassall J, Liu B, Lydeamore M, Miller C, <strong>Moss R</strong>, Price DJ, Ryan GE, Sullivan SG, Tobin R, Ward K, Kaldor J, Cheng AC, Wood J, McCaw JM</span><br/>
+  <span class="journal"><strong>Commun Dis Intell</strong>, 48: 47, 2024.</span><br/>
+</li>
+<li class="epi">
   <a href="https://doi.org/10.21105/joss.06276">pypfilt: a particle filter for Python</a><br/>
   <span class="author"><strong>Moss R</strong>&#9993;</span><br/>
   <span class="journal"><strong>Journal of Open Source Software</strong>, 9(96): 6276, 2024.</span><br/>
