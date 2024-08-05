@@ -18,6 +18,8 @@ This project combines mathematical/computational models of infectious disease ep
 **A key challenge is deciding how to interpret incomplete data.**
 Publications arising from this project include:
 
+- [Forecasting COVID-19 activity in Australia to support pandemic response: May to October 2020](https://doi.org/10.1038/s41598-023-35668-6), Moss et al., 2023.
+
 - [Early analysis of the Australian COVID-19 epidemic](https://doi.org/10.7554/eLife.58785), Price et al., 2020.
 
 - [Coordinating the real-time use of global influenza activity data for better public health planning](https://doi.org/10.1111/irv.12705), Biggerstaff<sup>&dagger;</sup> et al., 2020.
