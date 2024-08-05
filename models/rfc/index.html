@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Acute Renal Function Curves</title>
+    <link rel="stylesheet" href="https://robmoss.github.io/css/base.css"/>
+    <link rel="stylesheet" href="https://robmoss.github.io/css/syntax-theme.css"/>
+    
+  </head>
+<body><header class="site">
+  <nav>
+    <ul><li><a title="Home" class="inactive" href="https://robmoss.github.io/"><picture>
+            <source srcset="https://robmoss.github.io/images/home.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_home.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Home" src="https://robmoss.github.io/images/home.png"/>
+      </picture></a></li><li><a title="Research" class="inactive" href="https://robmoss.github.io/research/"><picture>
+            <source srcset="https://robmoss.github.io/images/influenza.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_influenza.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Research" src="https://robmoss.github.io/images/influenza.png"/>
+      </picture></a></li><li><a title="Teaching" class="inactive" href="https://robmoss.github.io/teaching/"><picture>
+            <source srcset="https://robmoss.github.io/images/teaching.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_teaching.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Teaching" src="https://robmoss.github.io/images/teaching.png"/>
+      </picture></a></li><li><a title="Models" class="active" href="https://robmoss.github.io/models/"><picture>
+            <source srcset="https://robmoss.github.io/images/model.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_model.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Models" src="https://robmoss.github.io/images/model.png"/>
+      </picture></a></li><li><a title="Blog" class="inactive" href="https://robmoss.github.io/blog/"><picture>
+            <source srcset="https://robmoss.github.io/images/info.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_info.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Blog" src="https://robmoss.github.io/images/info.png"/>
+      </picture></a></li></ul>
+  </nav>
+</header>
+
+<script language="javascript">
+function hide_noscript() {
+  var to_hide = document.getElementsByClassName("hidejs");
+  var to_show = document.getElementsByClassName("showjs");
+  for (var i = 0; i < to_hide.length; i++) {
+    to_hide[i].style["display"] = "none";
+  }
+  for (var i = 0; i < to_show.length; i++) {
+    to_show[i].style["display"] = "block";
+  }
+}
+</script>
+<h1 id="acute-renal-function-curves">Acute Renal Function Curves</h1>
+<p>The following figures plot model simulation results against acute renal function curves obtained from experimental studies in the rat.
+This work was done in collaboration with S. Randall Thomas and has been <a href="https://doi.org/10.1152/ajprenal.00089.2013">published</a> by <em>AJP Renal</em>.</p>
+<p>The model source code is available <a href="https://hub.darcs.net/rgm/kidney_2013-10-09">here</a>.
+This repository includes parameter sets and solutions for every simulation presented in the <a href="https://doi.org/10.1152/ajprenal.00089.2013">accompanying manuscript</a>, as well as scripts that reproduce the manuscript figures.</p>
+<p class="showjs">
+<strong>Instructions:</strong> Table 1 contains links to each publication's PubMed page, and allows the user to toggle the visibility of each experimental study on the plots below.
+</p>
+<p class="showjs">
+Hover the cursor over a line on either plot to identify the source of the data series; clicking on a line will keep that line selected, clicking on the tooltip will toggle whether the line will remain selected.
+</p>
+<p class="hidejs">
+<strong>Please enable javascript to view the plots.</strong>
+</p>
+<div class="figure">
+  <span id="jna" class="plot"></span><br/>
+  <strong>Figure 1:</strong> Regulation of sodium excretion.
+</div>
+<div class="figure">
+  <span id="jv" class="plot"></span><br/>
+  <strong>Figure 2:</strong> Regulation of water excretion.
+</div>
+<!-- Generate the plots. -->
+<script type="text/javascript" src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="./plot.js" charset="utf-8"></script>
+
+<footer class="site">
+    <a href="http://www.ardischeng.com/">icons by ardis</a>&nbsp;/ <a href="https:&#x2F;&#x2F;github.com&#x2F;robmoss&#x2F;robmoss.github.io&#x2F;tree&#x2F;master&#x2F;content/models&#x2F;rfc&#x2F;index.md">source</a></footer>
+</body>
+</html>
