@@ -1,3 +1,44 @@
+/* Define light and dark themes, based on the Tomorrow colour palette.
+ * See https://github.com/purcell/color-theme-sanityinc-tomorrow for details.
+ *
+ * I manually define `--fg-highlight` as being halfway between `--fg-base` and
+ * pure white/black.
+ */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-base: #1d1f21;
+        --bg-highlight: #282a2e;
+        --bg-selection: #373b41;
+        --fg-base: #c5c8c6 ;
+        --fg-highlight: #e2e3e2;
+        --fg-comment: #969896;
+        --fg-aqua: #8abeb7;
+        --fg-blue: #81a2be;
+        --fg-green: #b5bd68;
+        --fg-orange: #de935f;
+        --fg-purple: #b294bb;
+        --fg-red: #cc6666;
+        --fg-yellow: #f0c674;
+    }
+}
+@media not all and (prefers-color-scheme: dark) {
+    :root {
+        --bg-base: #ffffff;
+        --bg-highlight: #efefef;
+        --bg-selection: #d6d6d6;
+        --fg-base: #4d4d4c ;
+        --fg-highlight: #2e2e2e;
+        --fg-comment: #8e908c;
+        --fg-aqua: #3e999f;
+        --fg-blue: #3182bd;
+        --fg-green: #718c00;
+        --fg-orange: #f5871f;
+        --fg-purple: #8959a8;
+        --fg-red: #c82829;
+        --fg-yellow: #eab700;
+    }
+}
+
 body {
     font-family: "DejaVu Sans", "Calibri", "Verdana",
     sans-serif;
@@ -7,6 +48,8 @@ body {
     max-width: 50em;
     margin: auto;
     padding: 0 0.25em;
+    color: var(--fg-base);
+    background-color: var(--bg-base);
 }
 
 h1, h2, h3 {
@@ -33,13 +76,11 @@ article.post + article.post {
 }
 
 em {
-    /* color: #3e999f; */
-    color: #3182bd;
+    color: var(--fg-blue);
 }
 
 a, a:visited {
-    /* color: #3e999f; */
-    color: #3182bd;
+    color: var(--fg-blue);
 }
 
 a:hover, a:active {
@@ -56,8 +97,7 @@ a:hover, a:active {
     vertical-align: middle;
     /* Note: the vertical padding and hover borders are related */
     margin: 0.5em; padding: 0.5em 0.5em 0.25em 0.5em;
-    /* border-color: #8abeb7; */
-    border-color: #3182bd;
+    color: var(--fg-blue);
 }
 .site nav a.active {
     border-top-style: solid;
@@ -106,7 +146,7 @@ img.profile {
     margin-left: 2.5em;
     margin-right: 2.5em;
     padding: 0.5em;
-    border: 2px solid #7f7f7f;
+    border: 2px solid var(--fg-comment);
     border-radius: 1em;
     font-size: 85%;
 }
@@ -191,7 +231,7 @@ a.network img {
 }
 
 a.network:hover img {
-    border-color: #3182bd;
+    border-color: var(--fg-blue);
     border-bottom-style: solid;
     border-bottom-width: 0.25em;
     margin-bottom: 0em;
@@ -217,12 +257,12 @@ figure {
     /* Add vertical space around figures. */
     margin-top: 3em;
     margin-bottom: 3em;
-    border-bottom: 1px solid #afafaf;
+    border-bottom: 1px solid var(--fg-comment);
 }
 
 /* Inline code. */
 code {
-    background-color: #efefef;
+    background-color: var(--bg-highlight);
     padding: 0.1ex 0.1em;
     border-radius: 0.25em;
 }
@@ -242,6 +282,7 @@ pre code {
     margin: 0;
     padding: 0.5rem 0.5rem;
     border-radius: 1.5rem;
+    background-color: var(--bg-highlight);
 }
 pre table {
   width: 100%;
@@ -254,16 +295,18 @@ pre td {
 pre table td:nth-of-type(1) {
     user-select: none;
     text-align: right;
-    color: #7f7f7f;
+    color: var(--fg-comment);
 }
 /* Add horizontal space between line numbers and code. */
-pre table td:nth-of-type(2) span:first-child {
+/* NOTE: the "css" theme uses nested spans, so we need to use ">" here. */
+pre table td:nth-of-type(2) > span:first-child {
     padding-left: 1.5ex;
 }
 /* Highlight the entire line, overriding the default colour. */
 pre mark {
     display: block;
-    background-color:white !important;
+    background-color: var(--bg-base) !important;
+    color: var(--fg-base) !important;
 }
 
 /* Figures with captions. */
@@ -290,18 +333,6 @@ pre mark {
 
 /* Hide elements that will be revealed by scripts. */
 .showjs { display: none; }
-
-/* Define common colours, based on the Tomorrow colour palette.
-   See https://github.com/purcell/color-theme-sanityinc-tomorrow */
-:root {
-    --bg-base: #ffffff;
-    --bg-highlight: #efefef;
-    --fg-base: #4d4d4c ;
-    --fg-highlight: #2e2e2e;
-    --fg-blue: #3182bd;
-    --fg-green: #718c00;
-    --fg-red: #c82829;
-}
 
 .plot svg { font-size: 0.875em; }
 .plot line, .plot .axis, .plot .xTicks, .plot .yTicks { stroke: var(--fg-highlight); }

@@ -12,7 +12,11 @@
         {%- else -%}
         {%- set class = "inactive" -%}
         {%- endif -%}
-      <li><a title="{{ item.name }}" class="{{ class }}" href="{{ get_url(path=item.url) }}"><img alt="{{ item.name }}" src="{{get_url(path="/images/" ~ item.image)}}"/></a></li>
+      <li><a title="{{ item.name }}" class="{{ class }}" href="{{ get_url(path=item.url) }}"><picture>
+            <source srcset="{{get_url(path="/images/" ~ item.image)}}" media="(prefers-color-scheme: light)"/>
+            <source srcset="{{get_url(path="/images/dark_" ~ item.image)}}" media="(prefers-color-scheme: dark)"/>
+            <img alt="{{ item.name }}" src="{{get_url(path="/images/" ~ item.image)}}"/>
+      </picture></a></li>
       {%- endfor -%}
     </ul>
   </nav>
