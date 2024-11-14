@@ -9,13 +9,26 @@ maths = true
 
 <ul class="publication-list">
 
-## 2024
+## Preprints
 
 <li class="epi">
   <a href="https://doi.org/10.48550/arXiv.2405.13239">Jump-Switch-Flow: hybrid stochastic-deterministic solutions of compartmental models</a><br/>
   <span class="author">Germano DPJ<sup>&dagger;</sup>, Zarebski AE<sup>&dagger;</sup>, Hautphenne S, <strong>Moss R</strong>, Flegg JA, Flegg MB</span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
 </li>
+<li class="epi">
+  <a href="https://doi.org/10.1101/2024.08.01.24311380">Within-host modelling of primaquine-induced haemolysis in hemizygote glucose-6-phosphate dehydrogenase deficient healthy volunteers</a><br/>
+  <span class="author">Watson JA<sup>&dagger;</sup>&#9993;, Mehdipour P<sup>&dagger;</sup>, <strong>Moss R</strong><sup>&dagger;</sup>, Jittamala P, Zaloumis S, Price DJ, Dini S, Hanboonkunupakarn B, Leungsinsiri P, Poovorawan K, Chotivanich K, Bancone G, Commons RJ, Day NPJ, Pukrittayakamee S, Taylor WRJ, White NJ&#9993;, Simpson JA</span><br/>
+  <span class="journal"><em>Preprint</em>.</span><br/>
+</li>
+<li class="epi">
+  <a href="https://doi.org/10.1101/2024.10.13.24314968">A modular approach to forecasting COVID-19 hospital bed occupancy</a><br/>
+  <span class="author">Tobin RJ, Walker CR, <strong>Moss R</strong>, Mccaw JM, Price DJ<sup>&dagger;</sup>, Shearer FM<sup>&dagger;</sup></span><br/>
+  <span class="journal"><em>Preprint</em>.</span><br/>
+</li>
+
+## 2024
+
 <li class="epi">
   <a href="https://doi.org/10.33321/cdi.2024.48.47">Opportunities to strengthen respiratory virus surveillance systems in Australia: lessons learned from the COVID-19 response</a><br/>
   <span class="author">Shearer FM&#9993;, Edwards L, Kirk M, Eales O, Golding N, Hassall J, Liu B, Lydeamore M, Miller C, <strong>Moss R</strong>, Price DJ, Ryan GE, Sullivan SG, Tobin R, Ward K, Kaldor J, Cheng AC, Wood J, McCaw JM</span><br/>
