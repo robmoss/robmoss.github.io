@@ -71,7 +71,7 @@ I am a proponent of [Reproducible Research](https://en.wikipedia.org/wiki/Reprod
      icon="/images/logo-pypfilt-bordered-36.png",
      alt="pypfilt logo",
      space=true) %}
-  bootstrap particle filter for Python
+  particle filters for Python
   ([docs](https://pypfilt.readthedocs.io/))
 {% end %}
 {% icon_list_item(
