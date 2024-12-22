@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Virtual model environment</title>
+    <link rel="stylesheet" href="https://robmoss.github.io/css/base.css"/>
+    <link rel="stylesheet" href="https://robmoss.github.io/css/syntax-theme.css"/>
+    
+  </head>
+<body><header class="site">
+  <nav>
+    <ul><li><a title="Home" class="inactive" href="https://robmoss.github.io/"><picture>
+            <source srcset="https://robmoss.github.io/images/home.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_home.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Home" src="https://robmoss.github.io/images/home.png"/>
+      </picture></a></li><li><a title="Research" class="inactive" href="https://robmoss.github.io/research/"><picture>
+            <source srcset="https://robmoss.github.io/images/influenza.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_influenza.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Research" src="https://robmoss.github.io/images/influenza.png"/>
+      </picture></a></li><li><a title="Teaching" class="inactive" href="https://robmoss.github.io/teaching/"><picture>
+            <source srcset="https://robmoss.github.io/images/teaching.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_teaching.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Teaching" src="https://robmoss.github.io/images/teaching.png"/>
+      </picture></a></li><li><a title="Models" class="inactive" href="https://robmoss.github.io/models/"><picture>
+            <source srcset="https://robmoss.github.io/images/model.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_model.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Models" src="https://robmoss.github.io/images/model.png"/>
+      </picture></a></li><li><a title="Blog" class="inactive" href="https://robmoss.github.io/blog/"><picture>
+            <source srcset="https://robmoss.github.io/images/info.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_info.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Blog" src="https://robmoss.github.io/images/info.png"/>
+      </picture></a></li></ul>
+  </nav>
+</header>
+
+  <article class="post">
+    
+<header>
+  <h1>Virtual model environment</h1>
+  
+    <span class="post meta date">12 Jun 2015</span>
+  
+  
+    —
+  
+  
+    
+      <a class="tag" href="https://robmoss.github.io/tag/modelling/">modelling</a>
+    
+      <a class="tag" href="https://robmoss.github.io/tag/whole-kidney/">whole-kidney</a>
+    
+  
+</header>
+
+    <p>Thanks to Daniel Hurley from the University of Melbourne
+<a href="http://uomsystemsbiology.github.io/">Systems Biology Laboratory</a>, the
+<a href="https://robmoss.github.io/blog/hormonal-regulation-of-salt-and-water-excretion/">whole-kidney model</a>
+that I produced with S. Randall Thomas is now available as a
+<a href="https://github.com/uomsystemsbiology/rgm_kidney_vagrant">virtual environment</a>
+that is straightforward to install and get running.</p>
+<ol>
+<li>Ensure that <a href="https://git-scm.com/">Git</a>,
+<a href="http://www.vagrantup.com">Vagrant</a> and
+<a href="https://www.virtualbox.org/">VirtualBox</a> are installed; then</li>
+<li>Run the following commands in a terminal:</li>
+</ol>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">git</span></span><span class="z-meta z-function-call z-arguments z-shell"> clone https://github.com/uomsystemsbiology/rgm_kidney_vagrant.git</span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-cd z-shell">cd</span></span><span class="z-meta z-function-call z-arguments z-shell"> rgm_kidney_vagrant</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">vagrant</span></span><span class="z-meta z-function-call z-arguments z-shell"> up</span>
+</span></code></pre>
+<p>This will open a virtual machine that includes the pre-compiled model
+executable, allowing you to run model simulations and reproduce any of our
+manuscript figures by double-clicking on a desktop icon!</p>
+
+  </article>
+<footer class="site">
+    <a href="http://www.ardischeng.com/">icons by ardis</a>&nbsp;/ <a href="https:&#x2F;&#x2F;github.com&#x2F;robmoss&#x2F;robmoss.github.io&#x2F;tree&#x2F;master&#x2F;content/blog&#x2F;2015-06-12-Virtual-model-environment.md">source</a></footer>
+</body>
+</html>
