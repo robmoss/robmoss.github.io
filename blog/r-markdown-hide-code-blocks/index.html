@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>R Markdown: hide code blocks</title>
+    <link rel="stylesheet" href="https://robmoss.github.io/css/base.css"/>
+    <link rel="stylesheet" href="https://robmoss.github.io/css/syntax-theme.css"/>
+    
+  </head>
+<body><header class="site">
+  <nav>
+    <ul><li><a title="Home" class="inactive" href="https://robmoss.github.io/"><picture>
+            <source srcset="https://robmoss.github.io/images/home.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_home.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Home" src="https://robmoss.github.io/images/home.png"/>
+      </picture></a></li><li><a title="Research" class="inactive" href="https://robmoss.github.io/research/"><picture>
+            <source srcset="https://robmoss.github.io/images/influenza.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_influenza.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Research" src="https://robmoss.github.io/images/influenza.png"/>
+      </picture></a></li><li><a title="Teaching" class="inactive" href="https://robmoss.github.io/teaching/"><picture>
+            <source srcset="https://robmoss.github.io/images/teaching.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_teaching.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Teaching" src="https://robmoss.github.io/images/teaching.png"/>
+      </picture></a></li><li><a title="Models" class="inactive" href="https://robmoss.github.io/models/"><picture>
+            <source srcset="https://robmoss.github.io/images/model.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_model.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Models" src="https://robmoss.github.io/images/model.png"/>
+      </picture></a></li><li><a title="Blog" class="inactive" href="https://robmoss.github.io/blog/"><picture>
+            <source srcset="https://robmoss.github.io/images/info.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_info.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Blog" src="https://robmoss.github.io/images/info.png"/>
+      </picture></a></li></ul>
+  </nav>
+</header>
+
+  <article class="post">
+    
+<header>
+  <h1>R Markdown: hide code blocks</h1>
+  
+    <span class="post meta date">12 Nov 2024</span>
+  
+  
+    —
+  
+  
+    
+      <a class="tag" href="https://robmoss.github.io/tag/language/">language</a>
+    
+  
+</header>
+
+    <p>In writing an R Markdown document to describe a within-host malaria model that I'm working on, I have focused on the HTML version of the document and made use of <a href="https://bookdown.org/yihui/rmarkdown-cookbook/fold-show.html">code folding</a> to hide several code blocks by default.</p>
+<p>The PDF version of the document includes the complete listing of each code block, but I instead wanted to remove the folded code blocks from the PDF version.
+And while it took me a long time to find a solution, the solution itself is quite simple.</p>
+<span id="continue-reading"></span>
+<p>For each folded code block:</p>
+<pre data-lang="markdown" class="language-markdown z-code"><code class="language-markdown" data-lang="markdown"><span class="z-text z-html z-markdown"><span class="z-meta z-paragraph z-markdown"><span class="z-meta z-code-fence z-definition z-begin z-text z-markdown-gfm"><span class="z-punctuation z-definition z-raw z-code-fence z-begin z-markdown">```</span>{r block_name, class.source = &#39;fold-hide&#39;}
+</span><span class="z-markup z-raw z-code-fence z-markdown-gfm"># Code goes here ...
+</span><span class="z-meta z-code-fence z-definition z-end z-text z-markdown-gfm"><span class="z-punctuation z-definition z-raw z-code-fence z-end z-markdown">```</span>
+</span></span></span></code></pre>
+<p>use the <a href="https://bookdown.org/yihui/rmarkdown-cookbook/hide-one.html"><code>echo</code></a> option and <a href="https://bookdown.org/yihui/rmarkdown-cookbook/latex-html.html"><code>is_latex_output()</code></a> to hide the code block when exporting to PDF:</p>
+<pre data-lang="markdown" class="language-markdown z-code"><code class="language-markdown" data-lang="markdown"><span class="z-text z-html z-markdown"><span class="z-meta z-paragraph z-markdown"><span class="z-meta z-code-fence z-definition z-begin z-text z-markdown-gfm"><span class="z-punctuation z-definition z-raw z-code-fence z-begin z-markdown">```</span>{r block_name, class.source = &#39;fold-hide&#39;, echo = ! knitr::is_latex_output()}
+</span><span class="z-markup z-raw z-code-fence z-markdown-gfm"># Code goes here ...
+</span><span class="z-meta z-code-fence z-definition z-end z-text z-markdown-gfm"><span class="z-punctuation z-definition z-raw z-code-fence z-end z-markdown">```</span>
+</span></span></span></code></pre>
+<p>It's also possible to remove (sub)sections and code blocks entirely, unless exporting to a specific output format.
+For example, here is how to include headings and code blocks only for HTML output:</p>
+<pre data-lang="markdown" class="language-markdown z-code"><code class="language-markdown" data-lang="markdown"><span class="z-text z-html z-markdown"><span class="z-meta z-paragraph z-markdown"><span class="z-markup z-raw z-inline z-markdown"><span class="z-punctuation z-definition z-raw z-begin z-markdown">`</span>r if (knitr::is_html_output()) &#39;# My heading title&#39;<span class="z-punctuation z-definition z-raw z-end z-markdown">`</span></span>
+
+</span><span class="z-meta z-paragraph z-markdown"><span class="z-meta z-code-fence z-definition z-begin z-text z-markdown-gfm"><span class="z-punctuation z-definition z-raw z-code-fence z-begin z-markdown">```</span>{r block_name, include = knitr::is_html_output()}
+</span><span class="z-markup z-raw z-code-fence z-markdown-gfm"># Code goes here ...
+</span><span class="z-meta z-code-fence z-definition z-end z-text z-markdown-gfm"><span class="z-punctuation z-definition z-raw z-code-fence z-end z-markdown">```</span>
+</span></span></span></code></pre>
+
+  </article>
+<footer class="site">
+    <a href="http://www.ardischeng.com/">icons by ardis</a>&nbsp;/ <a href="https:&#x2F;&#x2F;github.com&#x2F;robmoss&#x2F;robmoss.github.io&#x2F;tree&#x2F;master&#x2F;content/blog&#x2F;2024-11-12-R-markdown-hide-code-blocks.md">source</a></footer>
+</body>
+</html>
