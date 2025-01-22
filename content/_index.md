@@ -22,8 +22,7 @@ maths = true
     Office 335, 207 Bouverie St<br>
     (03) 8344 9430<br>
     rgmoss AT unimelb edu au<br>
-    <a href="https://twitter.com/rob_models">@rob_models</a>
-    <a rel="me" href="https://mas.to/@rob_models">mastodon</a>
+    <a rel="me" href="https://mas.to/@rob_models">@rob_models@mas.to</a>
   </span>
 </address>
 {{ profile_pic() }}
