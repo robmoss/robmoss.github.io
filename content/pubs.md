@@ -17,14 +17,22 @@ maths = true
   <span class="journal"><em>Preprint</em>.</span><br/>
 </li>
 <li class="epi">
-  <a href="https://doi.org/10.1101/2024.08.01.24311380">Within-host modelling of primaquine-induced haemolysis in hemizygote glucose-6-phosphate dehydrogenase deficient healthy volunteers</a><br/>
-  <span class="author">Watson JA<sup>&dagger;</sup>&#9993;, Mehdipour P<sup>&dagger;</sup>, <strong>Moss R</strong><sup>&dagger;</sup>, Jittamala P, Zaloumis S, Price DJ, Dini S, Hanboonkunupakarn B, Leungsinsiri P, Poovorawan K, Chotivanich K, Bancone G, Commons RJ, Day NPJ, Pukrittayakamee S, Taylor WRJ, White NJ&#9993;, Simpson JA</span><br/>
+  <a href="https://doi.org/10.1101/2024.10.13.24314968">A modular approach to forecasting COVID-19 hospital bed occupancy</a><br/>
+  <span class="author">Tobin RJ&#9993;, Walker CR, <strong>Moss R</strong>, McCaw JM, Price DJ<sup>&dagger;</sup>, Shearer FM<sup>&dagger;</sup>&#9993;</span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
 </li>
 <li class="epi">
-  <a href="https://doi.org/10.1101/2024.10.13.24314968">A modular approach to forecasting COVID-19 hospital bed occupancy</a><br/>
-  <span class="author">Tobin RJ, Walker CR, <strong>Moss R</strong>, Mccaw JM, Price DJ<sup>&dagger;</sup>, Shearer FM<sup>&dagger;</sup></span><br/>
+  <a href="https://doi.org/10.1101/797878">A sub-exponential branching process to study early epidemic dynamics with application to Ebola</a><br/>
+  <span class="author">Zarebski AE&#9993;, <strong>Moss R</strong>, McCaw JM</span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
+</li>
+
+## 2025
+
+<li class="epi">
+  <a href="https://doi.org/10.1128/aac.01549-24">Within-host modeling of primaquine-induced hemolysis in hemizygote glucose-6-phosphate dehydrogenase deficient healthy volunteers</a><br/>
+  <span class="author">Watson JA<sup>&dagger;</sup>&#9993;, Mehdipour P<sup>&dagger;</sup>, <strong>Moss R</strong><sup>&dagger;</sup>, Jittamala P, Zaloumis SG, Price DJ, Dini S, Hanboonkunupakarn B, Leungsinsiri P, Poovorawan K, Chotivanich K, Bancone G, Commons RJ, Day NPJ, Pukrittayakamee S, Taylor WRJ, White NJ&#9993;, Simpson JA</span><br/>
+  <span class="journal"><strong>Antimicrob Agents Chemother</strong>, 2025.</span><br/>
 </li>
 
 ## 2024
@@ -75,7 +83,7 @@ maths = true
 </li>
 <li class="epi">
   <a href="https://doi.org/10.1016/j.vaccine.2020.12.053">Constructing an ethical framework for priority allocation of pandemic vaccines</a><br/>
-  <span class="author">Sullivan SG&#9993;, Fielding JE, Beard F, Macartney K, Williams J, Dawson A, Gilbert GL, Massey P, Crooks K, <strong>Moss R</strong>, McCaw JM, McVernon J</span><br/>
+  <span class="author">Sullivan SG&#9993;, Fielding JE, Beard F, Macartney K, Williams JH, Dawson A, Gilbert GL, Massey P, Crooks K, <strong>Moss R</strong>, McCaw JM, McVernon J</span><br/>
   <span class="journal"><strong>Vaccine</strong>, 39(5): 797–804, 2021.</span><br/>
 </li>
 <li class="epi">
