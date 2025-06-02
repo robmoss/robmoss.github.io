@@ -12,6 +12,16 @@ maths = true
 ## Preprints
 
 <li class="epi">
+  <a href="https://doi.org/10.1101/2025.05.22.25327965">A flexible agent-based modelling framework of multi-serotype pneumococcal carriage to evaluate vaccine strategies in large populations</a><br/>
+  <span class="author">Tellioglu N, Price DJ, Chen X, Spirkoska V, Wang Y, <strong>Moss R</strong>, Carvalho N, Carville K, Campbell PT, McVernon J</span><br/>
+  <span class="journal"><em>Preprint</em>.</span><br/>
+</li>
+<li class="epi">
+  <a href="https://doi.org/10.1101/2025.05.08.25327032">The role of the spleen in red blood cell loss caused by malaria: a mathematical model</a><br/>
+  <span class="author"><strong>Moss R</strong><sup>&dagger;</sup>, Dini S<sup>&dagger;</sup>, Kho S, Barber BE, Buffet PA, Rajasekhar M, Price DJ, Anstey NA<sup>&dagger;</sup>&#9993;, Simpson JA<sup>&dagger;</sup>&#9993;</span><br/>
+  <span class="journal"><em>Preprint</em>.</span><br/>
+</li>
+<li class="epi">
   <a href="https://doi.org/10.48550/arXiv.2405.13239">Jump-Switch-Flow: hybrid stochastic-deterministic solutions of compartmental models</a><br/>
   <span class="author">Germano DPJ<sup>&dagger;</sup>, Zarebski AE<sup>&dagger;</sup>, Hautphenne S, <strong>Moss R</strong>, Flegg JA, Flegg MB</span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
