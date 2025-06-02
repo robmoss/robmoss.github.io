@@ -1,0 +1,411 @@
+/* Define light and dark themes, based on the Tomorrow colour palette.
+ * See https://github.com/purcell/color-theme-sanityinc-tomorrow for details.
+ *
+ * I manually define `--fg-highlight` as being halfway between `--fg-base` and
+ * pure white/black.
+ */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-base: #1d1f21;
+        --bg-highlight: #282a2e;
+        --bg-selection: #373b41;
+        --fg-base: #c5c8c6 ;
+        --fg-highlight: #e2e3e2;
+        --fg-comment: #969896;
+        --fg-aqua: #8abeb7;
+        --fg-blue: #81a2be;
+        --fg-green: #b5bd68;
+        --fg-orange: #de935f;
+        --fg-purple: #b294bb;
+        --fg-red: #cc6666;
+        --fg-yellow: #f0c674;
+    }
+}
+@media not all and (prefers-color-scheme: dark) {
+    :root {
+        --bg-base: #ffffff;
+        --bg-highlight: #efefef;
+        --bg-selection: #d6d6d6;
+        --fg-base: #4d4d4c ;
+        --fg-highlight: #2e2e2e;
+        --fg-comment: #8e908c;
+        --fg-aqua: #3e999f;
+        --fg-blue: #3182bd;
+        --fg-green: #718c00;
+        --fg-orange: #f5871f;
+        --fg-purple: #8959a8;
+        --fg-red: #c82829;
+        --fg-yellow: #eab700;
+    }
+}
+
+body {
+    font-family: "DejaVu Sans", "Calibri", "Verdana",
+    sans-serif;
+    text-align: left;
+    font-size: 100%;
+    line-height: 1.5em;
+    max-width: 50em;
+    margin: auto;
+    padding: 0 0.25em;
+    color: var(--fg-base);
+    background-color: var(--bg-base);
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+    text-align: center;
+}
+h1 { font-size: 150%; }
+h2 { font-size: 130%; }
+h3 { font-size: 110%; }
+code {
+    font-family: "DejaVu Sans Mono", "Courier New", monospace;
+}
+
+header.site + h1, header.site + h2, header.site + h3 {
+    margin-top: 1rem;
+}
+
+* + h1, * + h2, * + h3 {
+    margin-top: 3rem;
+}
+
+article.post + article.post {
+    margin-top: 5rem;
+}
+
+em {
+    color: var(--fg-blue);
+}
+
+a, a:visited {
+    color: var(--fg-blue);
+}
+
+a:hover, a:active {
+    color: inherit;
+}
+
+.site nav ul, .site nav ol { text-align: center; }
+.site nav li {
+    display: inline; margin: 0; padding: 0;
+    background-image: none;
+}
+.site nav a {
+    display: inline-block;
+    vertical-align: middle;
+    /* Note: the vertical padding and hover borders are related */
+    margin: 0.5em; padding: 0.5em 0.5em 0.25em 0.5em;
+    color: var(--fg-blue);
+}
+.site nav a.active {
+    border-top-style: solid;
+    border-top-width: 0.25em;
+    padding-top: 0.25em;
+}
+.site nav a:hover {
+    border-bottom-style: solid;
+    border-bottom-width: 0.25em;
+    padding-bottom: 0em;
+}
+
+footer.site {
+    margin-top: 3rem;
+    font-size: 80%;
+    text-align: center;
+}
+
+.pagination nav {
+    margin-top: 3rem;
+    font-size: 90%;
+    text-align: center;
+}
+
+.pagination nav a + a {
+    margin-left: 2.5rem;
+}
+
+blockquote {
+    margin: 1.5em 3em;
+}
+
+blockquote em {
+    color: inherit;
+}
+
+img.profile {
+    display: block;
+    max-width: 16em;
+    padding-top: 0.5ex;
+    padding-bottom: 0.5ex;
+    margin: auto;
+}
+
+.blurb {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    padding: 0.5em;
+    border: 2px solid var(--fg-comment);
+    border-radius: 1em;
+    font-size: 85%;
+}
+
+.blurb address span {
+    display: inline-block;
+    font-style: italic;
+    line-height: 1.25em;
+}
+
+.blurb address .location {
+    text-align: right;
+    float: right;
+    margin-right: 0.1em;
+}
+
+.blurb .profile-links {
+    text-align: center;
+}
+
+.blurb nav {
+    text-align: center;
+}
+
+.blurb nav img { margin: 1em 1em 0em 1em; }
+
+/* Centre ul.icon-list but keep the list items left-aligned.
+   As per this StackOverflow answer: https://stackoverflow.com/a/16595659 */
+div.narrow-list {
+    text-align: center;
+}
+
+div.narrow-list ul, div.narrow-list ol {
+    display: inline-block;
+    text-align: left;
+}
+
+ul.icon-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.icon-list li {
+    margin-top: 0.5ex;
+    margin-bottom: 0.5ex;
+}
+
+.icon-list img {
+    vertical-align: middle;
+}
+
+.publication-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.publication-list li + li {
+    margin-top: 2em;
+}
+
+img.network {
+    max-width: 8em;
+    max-height: 4em;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+a.network {
+    margin: 0;
+    padding: 0;
+}
+
+a.network ~ a.network {
+    padding-left: 1em;
+}
+
+/* Note: the margin spacing and border width should be identical. */
+a.network img {
+    padding-bottom: 0.5em;
+    margin-bottom: 0.25em;
+}
+
+a.network:hover img {
+    border-color: var(--fg-blue);
+    border-bottom-style: solid;
+    border-bottom-width: 0.25em;
+    margin-bottom: 0em;
+}
+
+.post header {
+    text-align: center;
+}
+.post header h1 {
+    margin-bottom: 0.5rem;
+}
+.post header span, .post header a {
+    font-size: 90%;
+    font-style: italic;
+}
+.post.meta {
+    font-size: 90%;
+    font-style: italic;
+}
+
+figure {
+    text-align: center;
+    /* Add vertical space around figures. */
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border-bottom: 1px solid var(--fg-comment);
+}
+
+/* Inline code. */
+code {
+    background-color: var(--bg-highlight);
+    padding: 0.1ex 0.1em;
+    border-radius: 0.25em;
+}
+
+/* Code blocks. */
+pre {
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    font-size: 90%;
+    /* Ignore the hard-coded background colour. */
+    background-color: inherit !important;
+}
+pre code {
+    overflow: auto;
+    display: block;
+    margin: 0;
+    padding: 0.5rem 0.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--bg-highlight);
+}
+pre table {
+  width: 100%;
+  border-collapse: collapse;
+}
+pre td {
+    padding: 0;
+}
+/* Don't allow the user to select line numbers in code listing. */
+pre table td:nth-of-type(1) {
+    user-select: none;
+    text-align: right;
+    color: var(--fg-comment);
+}
+/* Add horizontal space between line numbers and code. */
+/* NOTE: the "css" theme uses nested spans, so we need to use ">" here. */
+pre table td:nth-of-type(2) > span:first-child {
+    padding-left: 1.5ex;
+}
+/* Highlight the entire line, overriding the default colour. */
+pre mark {
+    display: block;
+    background-color: var(--bg-base) !important;
+    color: var(--fg-base) !important;
+}
+
+/* Figures with captions. */
+.figure {
+    max-width: 40em;
+    margin: 0 auto;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+/*****************************************************************************
+  Interactive plots, such as renal function curves.
+*****************************************************************************/
+
+/* Floating tooltip appearance. */
+.tooltip {
+    font-size: 0.8rem;
+    line-height: 1.25em;
+    padding: 0.5em 0.75em; border-radius: 1em;
+    position: absolute;
+    background-color: var(--bg-highlight);
+    max-width: 30em;
+}
+
+/* Hide elements that will be revealed by scripts. */
+.showjs { display: none; }
+
+.plot svg { font-size: 0.875em; }
+.plot line, .plot .axis, .plot .xTicks, .plot .yTicks { stroke: var(--fg-highlight); }
+.plot line.grid { stroke-width: 0.1; }
+.plot text { fill: var(--fg-highlight); }
+.plot .axis { stroke-width: 0.8; }
+.plot .xTicks, .plot .yTicks { stroke-width: 0.6; }
+.plot path {
+    stroke: var(--fg-blue);
+    stroke-width: 2;
+    fill: none;
+}
+/* Note: the following rules are specific to renal function plots. */
+.plot path.model {
+    stroke: var(--fg-green);
+    stroke-width: 3;
+    fill: none;
+}
+.plot path.hull {
+    stroke: none;
+    fill: var(--fg-blue);
+    opacity: 0.2;
+    pointer-events: none;
+}
+.plot rect.model { fill: var(--fg-green); }
+.plot rect.exp { fill: var(--fg-blue); }
+.plot path#highlight {
+    stroke: var(--fg-red);
+    stroke-width: 5;
+}
+
+/*****************************************************************************
+  Plot legends, shown as fixed sidebars.
+*****************************************************************************/
+
+#plot-legend  {
+    position: fixed;
+    top: 4em;
+    left: 0em;
+    width: auto;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border-top-left-radius: 0em;
+    border-bottom-left-radius: 0em;
+    background: var(--bg-highlight);
+    border: 5px solid var(--fg-base);
+    border-left: 0;
+}
+#plot-legend caption {
+    margin-bottom: 1em;
+}
+#plot-legend table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 1em 1em;
+    line-height: 1.5em;
+}
+#plot-legend th, #plot-legend td {
+    padding: 0.1em 0.25em;
+    padding-right: 1em;
+}
+#plot-legend th, #plot-legend .toggle {
+    text-align: center;
+}
+#plot-legend .odd {
+    background: inherit;
+}
+#plot-legend .even {
+    background: var(--bg-base);
+}
+#plot-legend .showyes * {
+    color: var(--fg-green);
+}
+#plot-legend .showno * {
+    color: var(--fg-red);
+}
