@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Interactive SEIR model</title>
+    <link rel="stylesheet" href="https://robmoss.github.io/css/base.css"/>
+    <link rel="stylesheet" href="https://robmoss.github.io/css/syntax-theme.css"/>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    
+  </head>
+<body><header class="site">
+  <nav>
+    <ul><li><a title="Home" class="inactive" href="https://robmoss.github.io/"><picture>
+            <source srcset="https://robmoss.github.io/images/home.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_home.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Home" src="https://robmoss.github.io/images/home.png"/>
+      </picture></a></li><li><a title="Research" class="inactive" href="https://robmoss.github.io/research/"><picture>
+            <source srcset="https://robmoss.github.io/images/influenza.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_influenza.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Research" src="https://robmoss.github.io/images/influenza.png"/>
+      </picture></a></li><li><a title="Teaching" class="inactive" href="https://robmoss.github.io/teaching/"><picture>
+            <source srcset="https://robmoss.github.io/images/teaching.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_teaching.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Teaching" src="https://robmoss.github.io/images/teaching.png"/>
+      </picture></a></li><li><a title="Models" class="inactive" href="https://robmoss.github.io/models/"><picture>
+            <source srcset="https://robmoss.github.io/images/model.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_model.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Models" src="https://robmoss.github.io/images/model.png"/>
+      </picture></a></li><li><a title="Blog" class="inactive" href="https://robmoss.github.io/blog/"><picture>
+            <source srcset="https://robmoss.github.io/images/info.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_info.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Blog" src="https://robmoss.github.io/images/info.png"/>
+      </picture></a></li></ul>
+  </nav>
+</header>
+
+  <article class="post">
+    
+<header>
+  <h1>Interactive SEIR model</h1>
+  
+    <span class="post meta date">20 Dec 2016</span>
+  
+  
+    —
+  
+  
+    
+      <a class="tag" href="https://robmoss.github.io/tag/influenza/">influenza</a>
+    
+      <a class="tag" href="https://robmoss.github.io/tag/modelling/">modelling</a>
+    
+      <a class="tag" href="https://robmoss.github.io/tag/visualisation/">visualisation</a>
+    
+  
+</header>
+
+    <p>Originally prepared as a simple demo for 2016 Open Day, this
+<a href="https://robmoss.github.io/seir-demo/">interactive model</a>
+allows the viewer to explore how a variety of epidemiological parameters
+affect the size and duration of an infectious disease epidemic, such as:</p>
+<ul>
+<li>The basic reproduction number \(\left(R_0\right)\), the average number of
+<em>persons that a single infectious individual will infect</em> in an entirely
+susceptible population;</li>
+<li>The delay between being <em>infected</em> and becoming <em>infectious</em>
+\(\left(\frac{1}{\alpha}\right)\);</li>
+<li>The duration for which an individual is <em>infectious</em>
+\(\left(\frac{1}{\gamma}\right)\);</li>
+<li>The duration for which an individual is <em>protected from re-infection</em>
+\(\left(\frac{1}{\sigma}\right)\);</li>
+<li>The degree to which individuals <em>mix inhomogeneously</em> \(\left(\eta\right)\);
+and</li>
+<li>The proportion of the population \(S(0)\) that is <em>initially susceptible</em>.</li>
+</ul>
+<p>This is a <strong>deterministic SEIR meta-population model</strong>, where each individual
+in the population is either <em>susceptible</em> to infection, has been <em>exposed</em> to
+the pathogen, has progressed to being <em>infectious</em>, or has <em>recovered</em> from
+infection and has (temporary or permanent) protection from reinfection.</p>
+<p>The source code is
+<a href="https://bitbucket.org/robmoss/seir-demo-javascript">available</a> under the BSD
+3-Clause license.</p>
+
+  </article>
+<footer class="site">
+    <a href="http://www.ardischeng.com/">icons by ardis</a>&nbsp;/ <a href="https:&#x2F;&#x2F;github.com&#x2F;robmoss&#x2F;robmoss.github.io&#x2F;tree&#x2F;master&#x2F;content/blog&#x2F;2016-12-20-Interactive-SEIR-model.md">source</a></footer>
+</body>
+</html>
