@@ -43,7 +43,7 @@ maths = true
 ## Research
 
 [My research](@/research.md) focuses on predicting and mitigating the burden of infectious disease epidemics, through the use of mathematical/computational modelling and Bayesian inference.
-My primary focus is on seasonal and pandemic influenza, and (more recently) COVID-19.
+My primary focus is on seasonal and pandemic influenza, other respiratory pathogens such as RSV and COVID-19, and malaria.
 This includes:
 
 - Using **scenario modelling to inform recommendations** for specific interventions, such as targeted antiviral distribution; and
