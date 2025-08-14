@@ -12,6 +12,11 @@ maths = true
 ## Preprints
 
 <li class="epi">
+  <a href="https://doi.org/10.1101/2025.08.06.25333104">Cost-effectiveness of immunising interventions to reduce respiratory syncytial virus disease burden in infants in Australia</a><br/>
+  <span class="author">Carlin JB<sup>&dagger;</sup>&#9993;, Marcato AJ<sup>&dagger;</sup>, Wang Y<sup>&dagger;</sup>, <strong>Moss R</strong>, Carville KS, Chen X, Oliver VL, Spirkoska V, Campbell PT, Price DJ, Carvalho N<sup>&dagger;</sup>, McVernon J<sup>&dagger;</sup></span><br/>
+  <span class="journal"><em>Preprint</em>.</span><br/>
+</li>
+<li class="epi">
   <a href="https://doi.org/10.1101/2025.05.22.25327965">A flexible agent-based modelling framework of multi-serotype pneumococcal carriage to evaluate vaccine strategies in large populations</a><br/>
   <span class="author">Tellioglu N, Price DJ, Chen X, Spirkoska V, Wang Y, <strong>Moss R</strong>, Carvalho N, Carville K, Campbell PT, McVernon J</span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
@@ -27,11 +32,6 @@ maths = true
   <span class="journal"><em>Preprint</em>.</span><br/>
 </li>
 <li class="epi">
-  <a href="https://doi.org/10.1101/2024.10.13.24314968">A modular approach to forecasting COVID-19 hospital bed occupancy</a><br/>
-  <span class="author">Tobin RJ&#9993;, Walker CR, <strong>Moss R</strong>, McCaw JM, Price DJ<sup>&dagger;</sup>, Shearer FM<sup>&dagger;</sup>&#9993;</span><br/>
-  <span class="journal"><em>Preprint</em>.</span><br/>
-</li>
-<li class="epi">
   <a href="https://doi.org/10.1101/797878">A sub-exponential branching process to study early epidemic dynamics with application to Ebola</a><br/>
   <span class="author">Zarebski AE&#9993;, <strong>Moss R</strong>, McCaw JM</span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
@@ -40,9 +40,14 @@ maths = true
 ## 2025
 
 <li class="epi">
+  <a href="https://doi.org/10.1038/s43856-025-01086-0">A modular approach to forecasting COVID-19 hospital bed occupancy</a><br/>
+  <span class="author">Tobin RJ&#9993;, Walker CR, <strong>Moss R</strong>, McCaw JM, Price DJ<sup>&dagger;</sup>, Shearer FM<sup>&dagger;</sup>&#9993;</span><br/>
+  <span class="journal"><strong>Communications Medicine</strong>, 5: 349, 2025.</span><br/>
+</li>
+<li class="epi">
   <a href="https://doi.org/10.1128/aac.01549-24">Within-host modeling of primaquine-induced hemolysis in hemizygote glucose-6-phosphate dehydrogenase deficient healthy volunteers</a><br/>
   <span class="author">Watson JA<sup>&dagger;</sup>&#9993;, Mehdipour P<sup>&dagger;</sup>, <strong>Moss R</strong><sup>&dagger;</sup>, Jittamala P, Zaloumis SG, Price DJ, Dini S, Hanboonkunupakarn B, Leungsinsiri P, Poovorawan K, Chotivanich K, Bancone G, Commons RJ, Day NPJ, Pukrittayakamee S, Taylor WRJ, White NJ&#9993;, Simpson JA</span><br/>
-  <span class="journal"><strong>Antimicrob Agents Chemother</strong>, 2025.</span><br/>
+  <span class="journal"><strong>Antimicrob Agents Chemother</strong>, 69(4): e01549-24, 2025.</span><br/>
 </li>
 
 ## 2024
