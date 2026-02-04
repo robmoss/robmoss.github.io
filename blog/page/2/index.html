@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://robmoss.github.io/css/base.css"/>
+    <link rel="stylesheet" href="https://robmoss.github.io/css/syntax-theme.css"/>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    
+  </head>
+<body><header class="site">
+  <nav>
+    <ul><li><a title="Home" class="inactive" href="https://robmoss.github.io/"><picture>
+            <source srcset="https://robmoss.github.io/images/home.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_home.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Home" src="https://robmoss.github.io/images/home.png"/>
+      </picture></a></li><li><a title="Research" class="inactive" href="https://robmoss.github.io/research/"><picture>
+            <source srcset="https://robmoss.github.io/images/influenza.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_influenza.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Research" src="https://robmoss.github.io/images/influenza.png"/>
+      </picture></a></li><li><a title="Teaching" class="inactive" href="https://robmoss.github.io/teaching/"><picture>
+            <source srcset="https://robmoss.github.io/images/teaching.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_teaching.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Teaching" src="https://robmoss.github.io/images/teaching.png"/>
+      </picture></a></li><li><a title="Models" class="inactive" href="https://robmoss.github.io/models/"><picture>
+            <source srcset="https://robmoss.github.io/images/model.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_model.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Models" src="https://robmoss.github.io/images/model.png"/>
+      </picture></a></li><li><a title="Blog" class="active" href="https://robmoss.github.io/blog/"><picture>
+            <source srcset="https://robmoss.github.io/images/info.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_info.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Blog" src="https://robmoss.github.io/images/info.png"/>
+      </picture></a></li></ul>
+  </nav>
+</header>
+
+  
+  <article class="post">
+    
+<header>
+  <h1>Disease surveillance: no silver bullet</h1>
+  
+    <span class="post meta date">3 Nov 2017</span>
+  
+  
+    —
+  
+  
+    
+      <a class="tag" href="https://robmoss.github.io/tag/forecasting/">forecasting</a>
+    
+      <a class="tag" href="https://robmoss.github.io/tag/influenza/">influenza</a>
+    
+  
+</header>
+
+    
+    <p>In thinking about the strengths and limitations of different surveillance
+systems — from the perspective of infectious disease forecasting in my case,
+but the point applies more generally — it becomes clear that there is
+<a href="https://en.wikipedia.org/wiki/No_Silver_Bullet">no silver bullet</a>.
+No one surveillance system will tell us everything we need to know in order to
+understand the current impact of a disease on a population, or to predict the
+future impact of a disease.
+The <a href="https://www.cdc.gov/foodnet/surveillance.html">surveillance pyramid</a>
+model illustrates this in a very nice and clear manner:</p>
+<figure>
+  <img src="https://robmoss.github.io/images/surveillance-pyramid-1.svg" alt="Surveillance pyramid"/>
+  <figcaption><strong>Figure 1:</strong> the (infectious disease) surveillance pyramid.</figcaption>
+</figure>
+
+    <footer>
+      <a class="more" href="https://robmoss.github.io/blog/disease-surveillance-no-silver-bullet/">Read more &#187;</a>
+    </footer>
+    
+  </article>
+  
+  <article class="post">
+    
+<header>
+  <h1>Compartmental models in Rust</h1>
+  
+    <span class="post meta date">26 Oct 2017</span>
+  
+  
+    —
+  
+  
+    
+      <a class="tag" href="https://robmoss.github.io/tag/language/">language</a>
+    
+      <a class="tag" href="https://robmoss.github.io/tag/modelling/">modelling</a>
+    
+  
+</header>
+
+    
+    <p>I've been learning a bit of <a href="https://www.rust-lang.org/">Rust</a> in the past few
+weeks, mostly by writing some basic SIR-type models (both as ODE systems, and
+as continuous-time and discrete-time Markov chains).
+It takes most (maybe all) of the things that I like about
+<a href="http://ocaml.org/">OCaml</a> and adds more great features and safety guarantees,
+thanks to its <em>ownership</em> model and <em>lifetimes</em>.
+It's also very fast (no garbage collector, zero-cost abstractions) and has
+fantastic <a href="http://doc.crates.io/guide.html">tooling</a>, although compilation
+times can be very long, and package (&quot;crate&quot;) availability can be very
+hit-or-miss.
+I've enjoyed it enough that I'm looking forward to writing more Rust code in
+the future.
+Although I've no plans to rewrite <a href="http://pypfilt.readthedocs.io/">pypfilt</a> or
+<a href="http://epifx.readthedocs.io/">epifx</a> in Rust any time soon!</p>
+
+    <footer>
+      <a class="more" href="https://robmoss.github.io/blog/compartmental-models-in-rust/">View post &#187;</a>
+    </footer>
+    
+  </article>
+  
+  <article class="post">
+    
+<header>
+  <h1>Model selection for seasonal influenza forecasting</h1>
+  
+    <span class="post meta date">19 Jan 2017</span>
+  
+  
+    —
+  
+  
+    
+      <a class="tag" href="https://robmoss.github.io/tag/forecasting/">forecasting</a>
+    
+      <a class="tag" href="https://robmoss.github.io/tag/influenza/">influenza</a>
+    
+      <a class="tag" href="https://robmoss.github.io/tag/modelling/">modelling</a>
+    
+  
+</header>
+
+    
+    <p>Two firsts in one: &quot;<a href="http://dx.doi.org/10.1016/j.idm.2016.12.004">Model selection for seasonal influenza
+forecasting</a>&quot;
+is <a href="http://prism.edu.au/staff/alex-zarebski/">Alex</a>'s first <strong>first-author</strong>
+and my first <strong>last-author</strong> paper.
+It will appear in an upcoming issue of <em>Infectious Disease Modelling</em>, a new
+open access journal with a focus on the interface between mathematical
+modelling, data analysis, and public health decision support.</p>
+<p>This paper presents a likelihood-based method for selecting models that best
+predict future data (when conditioned on past data), and uses it to evaluate
+the predictive skill of disease transmission models that incorporate various
+features, such as inhomogeneous population mixing and climatic effects on
+transmission.
+I won't say any more here; if you're interested, read the paper!</p>
+<p>The source code used to generate all of the results presented in this
+manuscript is <a href="http://dx.doi.org/10.4225/49/5851d9ea54c65">available</a> under
+the BSD 3-Clause license.</p>
+
+    <footer>
+      <a class="more" href="https://robmoss.github.io/blog/model-selection-for-seasonal-influenza-forecasting/">View post &#187;</a>
+    </footer>
+    
+  </article>
+  
+  <article class="post">
+    
+<header>
+  <h1>Interactive SEIR model</h1>
+  
+    <span class="post meta date">20 Dec 2016</span>
+  
+  
+    —
+  
+  
+    
+      <a class="tag" href="https://robmoss.github.io/tag/influenza/">influenza</a>
+    
+      <a class="tag" href="https://robmoss.github.io/tag/modelling/">modelling</a>
+    
+      <a class="tag" href="https://robmoss.github.io/tag/visualisation/">visualisation</a>
+    
+  
+</header>
+
+    
+    <p>Originally prepared as a simple demo for 2016 Open Day, this
+<a href="https://robmoss.github.io/seir-demo/">interactive model</a>
+allows the viewer to explore how a variety of epidemiological parameters
+affect the size and duration of an infectious disease epidemic, such as:</p>
+<ul>
+<li>The basic reproduction number \(\left(R_0\right)\), the average number of
+<em>persons that a single infectious individual will infect</em> in an entirely
+susceptible population;</li>
+<li>The delay between being <em>infected</em> and becoming <em>infectious</em>
+\(\left(\frac{1}{\alpha}\right)\);</li>
+<li>The duration for which an individual is <em>infectious</em>
+\(\left(\frac{1}{\gamma}\right)\);</li>
+<li>The duration for which an individual is <em>protected from re-infection</em>
+\(\left(\frac{1}{\sigma}\right)\);</li>
+<li>The degree to which individuals <em>mix inhomogeneously</em> \(\left(\eta\right)\);
+and</li>
+<li>The proportion of the population \(S(0)\) that is <em>initially susceptible</em>.</li>
+</ul>
+<p>This is a <strong>deterministic SEIR meta-population model</strong>, where each individual
+in the population is either <em>susceptible</em> to infection, has been <em>exposed</em> to
+the pathogen, has progressed to being <em>infectious</em>, or has <em>recovered</em> from
+infection and has (temporary or permanent) protection from reinfection.</p>
+<p>The source code is
+<a href="https://bitbucket.org/robmoss/seir-demo-javascript">available</a> under the BSD
+3-Clause license.</p>
+
+    <footer>
+      <a class="more" href="https://robmoss.github.io/blog/interactive-seir-model/">View post &#187;</a>
+    </footer>
+    
+  </article>
+  
+  <article class="post">
+    
+<header>
+  <h1>A week is a long time in politics</h1>
+  
+    <span class="post meta date">12 Jun 2016</span>
+  
+  
+    —
+  
+  
+    
+      <a class="tag" href="https://robmoss.github.io/tag/forecasting/">forecasting</a>
+    
+      <a class="tag" href="https://robmoss.github.io/tag/influenza/">influenza</a>
+    
+      <a class="tag" href="https://robmoss.github.io/tag/visualisation/">visualisation</a>
+    
+  
+</header>
+
+    
+    <p>A year has passed since my <a href="https://robmoss.github.io/blog/virtual-model-environment/">last post</a>, and much has happened.
+I contributed to 6 government reports, submitted 5 first-author papers, became
+a reviewer for 4 more journals, gave 3 talks about our influenza forecasting
+project, enrolled 2 jurisdictions in our forecasting project, and
+joined 1 surveillance system.
+Here is the 2015/16 financial year recap …</p>
+
+    <footer>
+      <a class="more" href="https://robmoss.github.io/blog/a-week-is-a-long-time-in-politics/">Read more &#187;</a>
+    </footer>
+    
+  </article>
+  
+  <article class="post">
+    
+<header>
+  <h1>Virtual model environment</h1>
+  
+    <span class="post meta date">12 Jun 2015</span>
+  
+  
+    —
+  
+  
+    
+      <a class="tag" href="https://robmoss.github.io/tag/modelling/">modelling</a>
+    
+      <a class="tag" href="https://robmoss.github.io/tag/whole-kidney/">whole-kidney</a>
+    
+  
+</header>
+
+    
+    <p>Thanks to Daniel Hurley from the University of Melbourne
+<a href="http://uomsystemsbiology.github.io/">Systems Biology Laboratory</a>, the
+<a href="https://robmoss.github.io/blog/hormonal-regulation-of-salt-and-water-excretion/">whole-kidney model</a>
+that I produced with S. Randall Thomas is now available as a
+<a href="https://github.com/uomsystemsbiology/rgm_kidney_vagrant">virtual environment</a>
+that is straightforward to install and get running.</p>
+<ol>
+<li>Ensure that <a href="https://git-scm.com/">Git</a>,
+<a href="http://www.vagrantup.com">Vagrant</a> and
+<a href="https://www.virtualbox.org/">VirtualBox</a> are installed; then</li>
+<li>Run the following commands in a terminal:</li>
+</ol>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">git</span></span><span class="z-meta z-function-call z-arguments z-shell"> clone https://github.com/uomsystemsbiology/rgm_kidney_vagrant.git</span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-cd z-shell">cd</span></span><span class="z-meta z-function-call z-arguments z-shell"> rgm_kidney_vagrant</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">vagrant</span></span><span class="z-meta z-function-call z-arguments z-shell"> up</span>
+</span></code></pre>
+<p>This will open a virtual machine that includes the pre-compiled model
+executable, allowing you to run model simulations and reproduce any of our
+manuscript figures by double-clicking on a desktop icon!</p>
+
+    <footer>
+      <a class="more" href="https://robmoss.github.io/blog/virtual-model-environment/">View post &#187;</a>
+    </footer>
+    
+  </article>
+  
+  <article class="post">
+    
+<header>
+  <h1>Flu forecasts for Melbourne</h1>
+  
+    <span class="post meta date">9 May 2015</span>
+  
+  
+    —
+  
+  
+    
+      <a class="tag" href="https://robmoss.github.io/tag/forecasting/">forecasting</a>
+    
+      <a class="tag" href="https://robmoss.github.io/tag/influenza/">influenza</a>
+    
+      <a class="tag" href="https://robmoss.github.io/tag/visualisation/">visualisation</a>
+    
+  
+</header>
+
+    
+    <p>Our first trial of <em>live</em> influenza forecasting for metropolitan Melbourne is
+now available
+<a href="http://mathmodelling.sph.unimelb.edu.au/~rgm/flu-forecasts/">online</a>, using
+publicly available <a href="http://ideas.health.vic.gov.au/">surveillance data</a>.
+It will be very exciting to see how the forecasts evolve in the coming months!</p>
+<p>And yes, the animated plots are built with <code>D3.js</code>.</p>
+
+    <footer>
+      <a class="more" href="https://robmoss.github.io/blog/flu-forecasts-for-melbourne/">View post &#187;</a>
+    </footer>
+    
+  </article>
+  
+  <article class="post">
+    
+<header>
+  <h1>Afferent arteriole autoregulation</h1>
+  
+    <span class="post meta date">22 Feb 2014</span>
+  
+  
+    —
+  
+  
+    
+      <a class="tag" href="https://robmoss.github.io/tag/autoregulation/">autoregulation</a>
+    
+      <a class="tag" href="https://robmoss.github.io/tag/modelling/">modelling</a>
+    
+  
+</header>
+
+    
+    <p>In a <a href="https://robmoss.github.io/blog/pressure-natriuresis-in-diuresis-and-antidiuresis/">recent modelling
+study</a>
+we extended an existing model of afferent arteriole autoregulation
+(originally presented by
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/7485545">Feldberg et al.</a>) by adding an
+explicit glomerulus and calculating model SNGFR in addition to afferent blood
+and plasma flows.</p>
+<p>See <a href="/models">this description</a> of our
+extensions, the updated model equations, and a number of plots.
+The source code is <a href="https://github.com/robmoss/model-aa-autoreg">available</a>
+under the BSD 3-Clause license.</p>
+
+    <footer>
+      <a class="more" href="https://robmoss.github.io/blog/afferent-arteriole-autoregulation/">View post &#187;</a>
+    </footer>
+    
+  </article>
+  
+  <article class="post">
+    
+<header>
+  <h1>Pressure natriuresis in diuresis and antidiuresis</h1>
+  
+    <span class="post meta date">21 Feb 2014</span>
+  
+  
+    —
+  
+  
+    
+      <a class="tag" href="https://robmoss.github.io/tag/modelling/">modelling</a>
+    
+      <a class="tag" href="https://robmoss.github.io/tag/whole-kidney/">whole-kidney</a>
+    
+  
+</header>
+
+    
+    <p>&quot;<a href="http://dx.doi.org/10.1152/ajprenal.00500.2013">Dominant factors that govern pressure natriuresis in diuresis and
+antidiuresis: a mathematical
+model</a>&quot;
+(a collaboration with Anita T. Layton) has been accepted by <em>AJP Renal</em>
+and is now available online in advance of final publication.</p>
+<p>Building on observations in <a href="https://robmoss.github.io/blog/hormonal-regulation-of-salt-and-water-excretion/">my previous modelling
+study</a>,
+we investigated how pressure natriuresis—in both diuresis and
+antidiuresis—can be influenced by changes in medullary blood flow
+autoregulation and by inhibition of transport in the proximal convoluted
+tubule (PCT).
+We found that inhibited reabsorption in the model PCT (to degrees consistent
+with experimental measurements) is sufficient to stimulate a pressure
+natriuresis.</p>
+<p>The challenge here is that there is insufficient experimental data to
+quantify the pressure-dependent reabsorption inhibition in the PCT, but it
+is precisely this response that appears to play the single largest role in
+driving pressure natriuresis.
+Our modelling study establishes a reasonable benchmark for this quantitative
+relationship, which can be applied to future whole-kidney models.</p>
+
+    <footer>
+      <a class="more" href="https://robmoss.github.io/blog/pressure-natriuresis-in-diuresis-and-antidiuresis/">View post &#187;</a>
+    </footer>
+    
+  </article>
+  
+  <article class="post">
+    
+<header>
+  <h1>Hormonal regulation of salt and water excretion</h1>
+  
+    <span class="post meta date">15 Jan 2014</span>
+  
+  
+    —
+  
+  
+    
+      <a class="tag" href="https://robmoss.github.io/tag/modelling/">modelling</a>
+    
+      <a class="tag" href="https://robmoss.github.io/tag/whole-kidney/">whole-kidney</a>
+    
+  
+</header>
+
+    
+    <p>My article &quot;<a href="http://dx.doi.org/10.1152/ajprenal.00089.2013">Hormonal regulation of salt and water excretion: a mathematical
+model of whole-kidney function and
+pressure-natriuresis</a>&quot; (a
+collaboration with S. Randall Thomas), has been published in <em>AJP Renal</em>.
+It was also selected as the subject for an <strong>Editorial Focus essay</strong>,
+&quot;<a href="http://dx.doi.org/10.1152/ajprenal.00560.2013">Advancement in integrated models of renal function: closing the gap between
+simulation and real life</a>&quot;,
+written by Branko Braam.</p>
+<p>We present a whole-kidney model that incorporates glomerular and tubular
+function, differentiates cortical and medullary function, and describes
+vascular and reabsorptive characteristics of the kidney.
+Model simulations explore the regulation of renal function by aldosterone,
+angiotensin II, and antidiuretic hormone (ADH), and also the inhibition of
+sodium reabsorption in response to the administration of a thiazide and of
+amiloride.
+This model of integrated renal function is quite successful in simulating
+renal function, although there are of course several caveats.
+The article also provides a broad survey of both renal modelling and the
+experimental literature.</p>
+<p>In addition to the manuscript itself, <a href="/models">interactive versions</a> of a key
+figure—a comparison of model excretion rates against data from a number
+of experimental studies of acute pressure natriuresis in the rat—allow
+the viewer to examine each data series in isolation and refer back to the
+original articles.</p>
+
+    <footer>
+      <a class="more" href="https://robmoss.github.io/blog/hormonal-regulation-of-salt-and-water-excretion/">View post &#187;</a>
+    </footer>
+    
+  </article>
+  
+
+  <footer class="pagination">
+    <nav>
+      <!-- TODO: first/prev/next/last? -->
+    
+      <a class="previous" rel="prev" href="https:&#x2F;&#x2F;robmoss.github.io&#x2F;blog&#x2F;">&laquo; Previous page</a>
+    
+    
+      <a class="next" rel="next" href="https:&#x2F;&#x2F;robmoss.github.io&#x2F;blog&#x2F;page&#x2F;3&#x2F;">Next page &raquo;</a>
+    
+    </nav>
+  </footer>
+<footer class="site">
+    <a href="http://www.ardischeng.com/">icons by ardis</a>&nbsp;/ <a href="https:&#x2F;&#x2F;github.com&#x2F;robmoss&#x2F;robmoss.github.io&#x2F;tree&#x2F;master&#x2F;content/blog&#x2F;_index.md">source</a></footer>
+</body>
+</html>

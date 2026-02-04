@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>HOW-TO: Create a MATLAB Virtual Machine</title>
+    <link rel="stylesheet" href="https://robmoss.github.io/css/base.css"/>
+    <link rel="stylesheet" href="https://robmoss.github.io/css/syntax-theme.css"/>
+    
+  </head>
+<body><header class="site">
+  <nav>
+    <ul><li><a title="Home" class="inactive" href="https://robmoss.github.io/"><picture>
+            <source srcset="https://robmoss.github.io/images/home.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_home.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Home" src="https://robmoss.github.io/images/home.png"/>
+      </picture></a></li><li><a title="Research" class="inactive" href="https://robmoss.github.io/research/"><picture>
+            <source srcset="https://robmoss.github.io/images/influenza.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_influenza.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Research" src="https://robmoss.github.io/images/influenza.png"/>
+      </picture></a></li><li><a title="Teaching" class="inactive" href="https://robmoss.github.io/teaching/"><picture>
+            <source srcset="https://robmoss.github.io/images/teaching.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_teaching.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Teaching" src="https://robmoss.github.io/images/teaching.png"/>
+      </picture></a></li><li><a title="Models" class="inactive" href="https://robmoss.github.io/models/"><picture>
+            <source srcset="https://robmoss.github.io/images/model.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_model.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Models" src="https://robmoss.github.io/images/model.png"/>
+      </picture></a></li><li><a title="Blog" class="inactive" href="https://robmoss.github.io/blog/"><picture>
+            <source srcset="https://robmoss.github.io/images/info.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_info.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Blog" src="https://robmoss.github.io/images/info.png"/>
+      </picture></a></li></ul>
+  </nav>
+</header>
+
+  <article class="post">
+    
+<header>
+  <h1>HOW-TO: Create a MATLAB Virtual Machine</h1>
+  
+    <span class="post meta date">6 Oct 2018</span>
+  
+  
+    —
+  
+  
+    
+      <a class="tag" href="https://robmoss.github.io/tag/tutorial/">tutorial</a>
+    
+  
+</header>
+
+    <p>A steadily-increasing number of students and postdocs in our group find
+themselves needing to run huge numbers of model simulations, and the path of
+least resistance — using their local desktop or laptop — simply isn't
+feasible.
+Thankfully we have the <a href="https://nectar.org.au/research-cloud/">Nectar Cloud</a>
+at our disposal!
+I've been helping several people in our group transition to this platform, and
+this has prompted me to prepare several step-by-step tutorial for the
+different needs I've encountered so far.
+It's my intention to make these all available online, and the first cab off
+the rank is: How to create a MATLAB VM.</p>
+<span id="continue-reading"></span><h2 id="creating-a-vm">Creating a VM</h2>
+<p>Create a new NeCTAR VM using one of the large templates (e.g., <code>m3.xlarge</code>, which comprises 16 VCPUs, 30 GB root disk, and 32 GB RAM) and the <code>NeCTAR Debian 10 (Buster) amd64</code> image.</p>
+<p>Give it a descriptive name (e.g., <code>username-matlab-vm</code>) and make sure to select a key pair (under “Access &amp; Security”).</p>
+<h2 id="installing-required-packages">Installing required packages</h2>
+<p>Connect to the VM, noting that the default user account is <code>debian</code>:</p>
+<pre data-lang="sh" class="language-sh z-code"><code class="language-sh" data-lang="sh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ssh</span></span><span class="z-meta z-function-call z-arguments z-shell"> debian@144.6.224.174</span>
+</span></code></pre>
+<p>Once you’ve logged into the VM, make sure that the system packages are all up to date:</p>
+<pre data-lang="sh" class="language-sh z-code"><code class="language-sh" data-lang="sh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt update</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt upgrade</span>
+</span></code></pre>
+<p>Restart the VM so that updated kernel images and other system services are reloaded (this will disconnect you from the VM):</p>
+<pre data-lang="sh" class="language-sh z-code"><code class="language-sh" data-lang="sh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> shutdown<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>r</span> now</span>
+</span></code></pre>
+<p>Install required packages:</p>
+<pre data-lang="sh" class="language-sh z-code"><code class="language-sh" data-lang="sh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt install gcc g++ gfortran xfce4</span>
+</span></code></pre>
+<p>Note that <code>xfce4</code> pulls in <code>Xorg</code> dependencies; MathWorks <a href="https://au.mathworks.com/matlabcentral/answers/229857-why-do-i-see-preparing-installation-files-installing-finished-in-the-terminal-window-wh">do not identify</a> a precise list of required <code>Xorg</code> packages:</p>
+<blockquote>
+<p><em>Even if you intend to run MATLAB only in non-graphical mode, MATLAB requires some X11 libraries to run. Unfortunately, we are not able to specify the X11 requirements down to the exact set of packages required because different distributions may package the libraries differently. MATLAB will work out of the box on desktop installations of any supported distribution.</em></p>
+</blockquote>
+<p>You could also install OpenJDK for Java support, but the MATLAB installer bundles its own JVM and it isn’t clear whether it will use an installed JVM instead.</p>
+<h2 id="ensure-x11-forwarding-is-enabled">Ensure X11 forwarding is enabled</h2>
+<p>On the VM, make sure that the file <code>/etc/ssh/sshd_config</code> contains the line <code>X11Forwarding yes</code> and that this line isn't commented-out with a <code>#</code>. You can edit this file by running:</p>
+<pre data-lang="sh" class="language-sh z-code"><code class="language-sh" data-lang="sh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> nano /etc/ssh/sshd_config</span>
+</span></code></pre>
+<p>Once you have made this change, press <code>Ctrl+O</code> to save the changes and the press <code>Ctrl+X</code> to exit the text editor.</p>
+<p><strong>NOTE:</strong> depending on your local computer's configuration, in order for X11 forwarding to work you may have to specify <code>-YC</code> instead of <code>-XC</code> when connecting to the VM.</p>
+<h2 id="installing-matlab">Installing MATLAB</h2>
+<ol>
+<li>
+<p>Create a MathWorks account, if you don’t already have one. Make sure that you use your institutional email address (e.g., <code>username@unimelb.edu.au</code>).</p>
+</li>
+<li>
+<p>Download the “Linux (64-bit)” installer from the <a href="https://au.mathworks.com/downloads/web_downloads/">MathWorks website</a>. This will be a single archive named, e.g., <code>matlab_R2018a_glnxa64.zip</code> for MATLAB R2018a.</p>
+</li>
+<li>
+<p>Transfer the installer to the virtual machine (<strong>important:</strong> note the trailing colon after the virtual machine’s IP address):</p>
+<pre data-lang="sh" class="language-sh z-code"><code class="language-sh" data-lang="sh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">scp</span></span><span class="z-meta z-function-call z-arguments z-shell"> matlab_R2018a_glnxa64.zip debian@144.6.224.174:</span>
+</span></code></pre>
+</li>
+<li>
+<p>Connect to the VM, making sure that X11 forwarding is <strong>enabled</strong>, and launch the installer:</p>
+<pre data-lang="sh" class="language-sh z-code"><code class="language-sh" data-lang="sh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ssh</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>XC</span> debian@144.6.224.174</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mkdir</span></span><span class="z-meta z-function-call z-arguments z-shell"> matlab-installer</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mv</span></span><span class="z-meta z-function-call z-arguments z-shell"> matlab_R2018a_glnxa64.zip matlab-installer</span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-cd z-shell">cd</span></span><span class="z-meta z-function-call z-arguments z-shell"> matlab-installer</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">unzip</span></span><span class="z-meta z-function-call z-arguments z-shell"> matlab_R2018a_glnxa64.zip</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> su</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">xauth</span></span><span class="z-meta z-function-call z-arguments z-shell"> merge /home/debian/.Xauthority</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">./install</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>verbose</span></span>
+</span></code></pre>
+<p>The graphical installer should appear on your desktop.</p>
+</li>
+<li>
+<p>During the installation process, associate your MathWorks account with the University of Melbourne’s <a href="https://github.com/resbaz/lessons/blob/master/matlab/unimelb_matlab_install.md">site license</a>:</p>
+<ul>
+<li>Staff: <code>24759-36418-71647-13382-89362</code></li>
+<li>Students: <code>18098-22076-81253-90866-03229</code></li>
+</ul>
+</li>
+<li>
+<p>Install MATLAB to the ephemeral disk (i.e., somewhere on <code>/mnt</code>, such as <code>/mnt/MATLAB/R2018a</code>).</p>
+</li>
+<li>
+<p>Install the following toolboxes <strong>at a minimum</strong>:</p>
+<ul>
+<li>The Parallel Computing Toolbox (provides <code>parpool</code>).</li>
+<li>The Statistics and Machine Learning Toolbox (provides <code>betainv</code>, etc).</li>
+<li>The Deep Learning Toolbox, which was previously called the Neural Network Toolbox (provides <code>combvec</code>).</li>
+</ul>
+<p>These toolboxes are sufficient for using the LHS framework and running the pandemic influenza simulation model, but you may require additional toolboxes depending on your project.</p>
+</li>
+<li>
+<p>Once the installation is completed, add symbolic links so that MATLAB is found in your $PATH:</p>
+<pre data-lang="sh" class="language-sh z-code"><code class="language-sh" data-lang="sh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> ln<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span> /mnt/MATLAB/R2018a/bin/matlab /usr/local/bin/matlab</span>
+</span></code></pre>
+</li>
+</ol>
+<h2 id="launching-matlab">Launching MATLAB</h2>
+<p>To use the GUI:</p>
+<pre data-lang="sh" class="language-sh z-code"><code class="language-sh" data-lang="sh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ssh</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>XC</span> debian@144.6.224.174</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">matlab</span></span> <span class="z-keyword z-operator z-logical z-job z-shell">&amp;</span>
+</span></code></pre>
+<p>To use the text interface:</p>
+<pre data-lang="sh" class="language-sh z-code"><code class="language-sh" data-lang="sh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ssh</span></span><span class="z-meta z-function-call z-arguments z-shell"> debian@144.6.224.174</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">matlab</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>nodisplay</span></span>
+</span></code></pre>
+<p>Note that in order to use the Parallel Computing Toolbox (i.e., <code>parpool</code> and <code>parfor</code>) the Java Virtual Machine (JVM) <a href="https://au.mathworks.com/matlabcentral/answers/230285-parpool-r2014a-fails-on-linux">must be enabled</a>, so do not start MATLAB with the <code>-nojvm</code> command-line option.</p>
+<h2 id="other-materials">Other materials</h2>
+<p>See the <a href="https://espaces.edu.au/vwrangler">Virtual Wranglers</a> community knowledge base, intended for people managing Nectar virtual machines; in particular, see their <a href="https://espaces.edu.au/vwrangler/nectar-topics/nectar-how-tos">Nectar HOW-TOs</a> and their <a href="https://espaces.edu.au/vwrangler/nectar-topics/nectar-how-tos/installing-matlab-on-a-nectar-instance">Installing MATLAB</a> guide.</p>
+
+  </article>
+<footer class="site">
+    <a href="http://www.ardischeng.com/">icons by ardis</a>&nbsp;/ <a href="https:&#x2F;&#x2F;github.com&#x2F;robmoss&#x2F;robmoss.github.io&#x2F;tree&#x2F;master&#x2F;content/blog&#x2F;2018-10-06-How-to-create-a-MATLAB-VM.md">source</a></footer>
+</body>
+</html>

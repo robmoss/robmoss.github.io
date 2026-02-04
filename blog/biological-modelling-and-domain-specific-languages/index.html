@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Biological modelling and domain-specific languages</title>
+    <link rel="stylesheet" href="https://robmoss.github.io/css/base.css"/>
+    <link rel="stylesheet" href="https://robmoss.github.io/css/syntax-theme.css"/>
+    
+  </head>
+<body><header class="site">
+  <nav>
+    <ul><li><a title="Home" class="inactive" href="https://robmoss.github.io/"><picture>
+            <source srcset="https://robmoss.github.io/images/home.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_home.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Home" src="https://robmoss.github.io/images/home.png"/>
+      </picture></a></li><li><a title="Research" class="inactive" href="https://robmoss.github.io/research/"><picture>
+            <source srcset="https://robmoss.github.io/images/influenza.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_influenza.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Research" src="https://robmoss.github.io/images/influenza.png"/>
+      </picture></a></li><li><a title="Teaching" class="inactive" href="https://robmoss.github.io/teaching/"><picture>
+            <source srcset="https://robmoss.github.io/images/teaching.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_teaching.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Teaching" src="https://robmoss.github.io/images/teaching.png"/>
+      </picture></a></li><li><a title="Models" class="inactive" href="https://robmoss.github.io/models/"><picture>
+            <source srcset="https://robmoss.github.io/images/model.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_model.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Models" src="https://robmoss.github.io/images/model.png"/>
+      </picture></a></li><li><a title="Blog" class="inactive" href="https://robmoss.github.io/blog/"><picture>
+            <source srcset="https://robmoss.github.io/images/info.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_info.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Blog" src="https://robmoss.github.io/images/info.png"/>
+      </picture></a></li></ul>
+  </nav>
+</header>
+
+  <article class="post">
+    
+<header>
+  <h1>Biological modelling and domain-specific languages</h1>
+  
+    <span class="post meta date">1 Jun 2012</span>
+  
+  
+    —
+  
+  
+    
+      <a class="tag" href="https://robmoss.github.io/tag/language/">language</a>
+    
+      <a class="tag" href="https://robmoss.github.io/tag/modelling/">modelling</a>
+    
+  
+</header>
+
+    <p>In &quot;<a href="http://dx.doi.org/10.1371/journal.pcbi.1002521">The Layer-Oriented
+Approach to Declarative Languages for Biological Modeling</a>&quot;, Raikov and De
+Schutter propose a &quot;layer-oriented&quot; declarative language to map high-level
+biological concepts to computational representations. The layer-oriented
+approach was chosen because &quot;<em>additional functionality can be transparently
+added to the language by adding more layers</em>&quot;.</p>
+<p>This is an area that has interested me ever since I began my PhD.
+Domain-specific languages are a very neat way to express computational problems
+in a manner that (hopefully) captures the essentials of the problem domain with
+a minimum of noise. And declarative languages (e.g., logic languages such as
+Prolog and <a href="http://www.mercurylang.org/">Mercury</a>, and
+functional languages such as <a href="http://www.haskell.org/">Haskell</a> and
+<a href="http://caml.inria.fr/ocaml/">OCaml</a>) are more readily able to
+express the logic of a problem without (overly) digressing into the algorithmic
+details of solving the problem.</p>
+<p>I suppose my biggest concern with the layer-oriented approach is that an
+extension to the language is presumably constrained by the existing
+layers—a layer can only be added between two existing layers, or at the
+top or bottom of the entire collection of layers. Thus, the choice of a core
+set of layers would set fixed constraints on the concerns and the levels of
+abstraction that an extension could possibly support. Of course, if a more
+traditional Computer Science approach were taken (e.g., a core language and
+syntactical extensions such as macros), then extensions would necessarily be
+orthogonal and so constrained by the underlying language. At least, that's my
+gut feeling.</p>
+<p>In more practical terms, my exposure to the word of ontologies (spanning
+physiology, biology, chemistry and physics) has given me a much greater
+appreciation for the scope of <em>model documentation</em> and how such
+documentation can be precisely defined and referenced. In my opinion, it would
+be a great development for models to be presented with their parameter values
+(or sets of parameter values) associated not only with ontological terms
+(providing definitions that span different notations and presentations), but
+also with references to the source data, review articles and modelling papers
+from which the values were derived, fitted or compared against. This would be
+a way of publishing a vast amount of the grunt-work that goes into developing
+and analysing a model, in a concise and machine-readable format.</p>
+<p>All in all, I think this is an idea that certainly needs to be given broad
+consideration in the biological modelling world. By taking what little Computer
+Science can offer (beyond farming large-scale computation to experienced
+programmers and large multi-core systems), hopefully future biological models
+can more clearly and succinctly communicate not only the &quot;<em>how</em>&quot;, but
+also the &quot;<em>what</em>&quot; and &quot;<em>why</em>&quot;.</p>
+
+  </article>
+<footer class="site">
+    <a href="http://www.ardischeng.com/">icons by ardis</a>&nbsp;/ <a href="https:&#x2F;&#x2F;github.com&#x2F;robmoss&#x2F;robmoss.github.io&#x2F;tree&#x2F;master&#x2F;content/blog&#x2F;2012-06-01-Biological-modelling-and-domain-specific-languages.md">source</a></footer>
+</body>
+</html>

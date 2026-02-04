@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Change the problem: 18XX token placement</title>
+    <link rel="stylesheet" href="https://robmoss.github.io/css/base.css"/>
+    <link rel="stylesheet" href="https://robmoss.github.io/css/syntax-theme.css"/>
+    
+  </head>
+<body><header class="site">
+  <nav>
+    <ul><li><a title="Home" class="inactive" href="https://robmoss.github.io/"><picture>
+            <source srcset="https://robmoss.github.io/images/home.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_home.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Home" src="https://robmoss.github.io/images/home.png"/>
+      </picture></a></li><li><a title="Research" class="inactive" href="https://robmoss.github.io/research/"><picture>
+            <source srcset="https://robmoss.github.io/images/influenza.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_influenza.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Research" src="https://robmoss.github.io/images/influenza.png"/>
+      </picture></a></li><li><a title="Teaching" class="inactive" href="https://robmoss.github.io/teaching/"><picture>
+            <source srcset="https://robmoss.github.io/images/teaching.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_teaching.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Teaching" src="https://robmoss.github.io/images/teaching.png"/>
+      </picture></a></li><li><a title="Models" class="inactive" href="https://robmoss.github.io/models/"><picture>
+            <source srcset="https://robmoss.github.io/images/model.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_model.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Models" src="https://robmoss.github.io/images/model.png"/>
+      </picture></a></li><li><a title="Blog" class="inactive" href="https://robmoss.github.io/blog/"><picture>
+            <source srcset="https://robmoss.github.io/images/info.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_info.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Blog" src="https://robmoss.github.io/images/info.png"/>
+      </picture></a></li></ul>
+  </nav>
+</header>
+
+  <article class="post">
+    
+<header>
+  <h1>Change the problem: 18XX token placement</h1>
+  
+    <span class="post meta date">7 Nov 2022</span>
+  
+  
+    —
+  
+  
+    
+      <a class="tag" href="https://robmoss.github.io/tag/modelling/">modelling</a>
+    
+  
+</header>
+
+    <p>It's surprising how often you can translate one problem into another problem, for which there are known solutions and/or algorithms.
+For example, with <a href="https://en.wikipedia.org/wiki/Green%27s_theorem">Green's theorem</a> you can choose between solving a line integral or a double integral, and select whichever option is simplest to solve.
+The necessary ingredients are:</p>
+<ol>
+<li>Being aware of the equivalence between two problems; and</li>
+<li>Knowing how to solve (at least) one of these problems.</li>
+</ol>
+<p>One example that I found (by accident) was that preserving the connectivity of all placed tokens when upgrading a tile in an <a href="https://en.wikipedia.org/wiki/18XX">18XX board game</a> is equivalent to solving a <a href="https://en.wikipedia.org/wiki/Maximum_flow_problem">maximum flow problem</a>.</p>
+<span id="continue-reading"></span>
+<p>While the first problem (preserving token connectivity) can be solved with brute force, there are well-studied algorithms for solving maximum flow problems, such as the Edmonds-Karp algorithm.
+Re-implementing a well-known algorithm can be <em>easier</em> than implementing something new and, as a bonus, there are often many example problems <em>you can use to test your implementation</em>!</p>
+<p>But first, some explanation is required …</p>
+<h2 id="tiles-tracks-and-tokens">Tiles, tracks, and tokens</h2>
+<p>Board games in the 18XX family typically have a hexagonal grid map, which depicts a geographical area that contains cities and terrain such as rivers and mountains.
+Hexagonal tiles are placed to expand the railway network.
+Tiles contain <em>track segments</em> (shown here as black lines/arcs), and may also contain <em>revenue centres</em> (such as cities).
+Revenue centres can have reserved spaces (shown here as white circles) in which <em>tokens</em> may be placed.
+Tokens are used to represent stations operated by different companies.</p>
+<p>For example, <em>Figure 1</em> shows a yellow tile with three separate revenue centres, each of which can contain one token.
+The top and lower-left revenue centres are connected to track segments that may link to track segments on neighbouring tiles.</p>
+<figure>
+  <img src="https://robmoss.github.io/images/18xx-montreal-yellow-tile.png" alt="Montreal yellow tile"/>
+  <figcaption><strong>Figure 1:</strong> A yellow tile with three revenue centres and two track segments.
+This tile also includes a location identifier (<strong>M</strong>) and indicates that revenue centres earn <code>$40</code>.</figcaption>
+</figure>
+<p>As shown in <em>Figure 2</em>, companies may place tokens in these revenue centres in order to secure routes through these revenue centres, and to prevent other companies from operating routes that pass through these revenue centres.</p>
+<figure>
+  <img src="https://robmoss.github.io/images/18xx-montreal-yellow-tile-tokens.png" alt="Montreal yellow tile with tokens"/>
+  <figcaption><strong>Figure 2:</strong> The yellow tile in <em>Figure 1</em> with two placed tokens.
+The <em>QLS</em> token is connected to the top face, and the <em>LPS</em> token is connected to the lower-left face.</figcaption>
+</figure>
+<h2 id="upgrading-tiles">Upgrading tiles</h2>
+<p>Tiles of different colours become available as the game progresses, and may be used to upgrade existing tiles.
+<em>Figure 3</em> shows five green tiles that could be used to upgrade the yellow tile in <em>Figure 2</em> (with revenue increased from <code>$40</code> to <code>$50</code>).
+These tiles all include three revenue centres, each of which can contain one token.</p>
+<figure>
+  <img src="https://robmoss.github.io/images/18xx-montreal-green-tiles.png" alt="Montreal green tiles"/>
+  <figcaption><strong>Figure 3:</strong> Green tiles that can be used to upgrade the yellow tile in <em>Figure 2</em>.</figcaption>
+</figure>
+<p>Let's consider upgrading the yellow tile in <em>Figure 2</em> to the <code>X2</code> tile (the top-right tile in <em>Figure 3</em>).
+Note that we need to preserve the existing connectivity of each token.
+This means that the <em>QLS</em> token must be connected to the top face of the upgraded tile, and the <em>LPS</em> token must be connected to the lower-left face of the upgraded tile.
+While there are six possible ways that we can orient the <code>X2</code> tile, <em>Figure 4</em> shows that only four of those orientations can preserve the token connectivity.</p>
+<figure>
+  <img src="https://robmoss.github.io/images/18xx-montreal-green-tokens.png" alt="Montreal yellow tile with tokens"/>
+  <figcaption><strong>Figure 4:</strong> The six options for upgrading to the green <code>X2</code> tile, with tokens placed only when it is possible to preserve their connectivity.</figcaption>
+</figure>
+<p>These green tiles can, in turn, be upgrade to brown tiles.
+<em>Figure 5</em> shows three brown tiles that could be used to upgrade the green tiles in <em>Figure 4</em> (with revenue increased from <code>$50</code> to <code>$70</code>).</p>
+<figure>
+  <img src="https://robmoss.github.io/images/18xx-montreal-brown-tiles.png" alt="Montreal brown tiles"/>
+  <figcaption><strong>Figure 5:</strong> Brown tiles that can replace the green tiles in <em>Figure 4</em>.
+Each tile has two revenue centres: one can contain two tokens, and the other can contain one token.</figcaption>
+</figure>
+<p>Let's consider upgrading the <em>top-left</em> green tile in <em>Figure 4</em> to the <code>X7</code> tile (the right tile in <em>Figure 5</em>).
+Note that each token is now connected to two tile faces — the <em>QLS</em> token to the top and bottom faces, and the <em>LPS</em> token to the lower-left and lower-right faces — and we need to preserve this connectivity.
+Again, there are six possible ways that we can orient the <code>X7</code> tile, but
+<em>Figure 6</em> shows that only two of those orientations can preserve the token connectivity.</p>
+<figure>
+  <img src="https://robmoss.github.io/images/18xx-montreal-brown-tokens.png" alt="Montreal yellow tile with tokens"/>
+  <figcaption><strong>Figure 6:</strong> The six options for upgrading to the brown <code>X7</code> tile, with tokens placed only when it is possible to preserve their connectivity.</figcaption>
+</figure>
+<h2 id="framing-this-as-a-maximum-flow-problem">Framing this as a maximum flow problem</h2>
+<p>We are searching for an allocation of tokens to revenue centres that preserves the existing connections between tokens and tile faces.
+As we saw in <em>Figure 4</em>, a valid allocation may add additional connections between tokens and tile faces.</p>
+<p>Maximum flow problems involve finding a flow from a source node to a sink node that obtains the maximum possible flow rate, in directed graphs where each edge has a maximum capacity.
+Consider each token as a flow source — that is, each token creates a demand that must be met — and each revenue centre as a pipe with some maximum capacity (the number of token spaces).
+Connect each token to only those revenue centres that preserve the token's connections.
+The maximum possible flow rate in this network is the sum of token flows — the total demand — and if such a flow is possible, then there is a valid allocation of tokens to revenue centres!</p>
+<p>Consider the yellow tile with placed tokens, and the two orientations of the green <code>X2</code> tile, shown in <em>Figure 7</em>.
+Does either orientation of the <code>X2</code> tile allow us to preserve the connectivity of the tokens placed on the yellow tile?</p>
+<figure>
+  <img src="https://robmoss.github.io/images/18xx-montreal-x2-numbered.png" alt="Montreal X2 tile"/>
+  <figcaption><strong>Figure 7:</strong> The yellow tile with placed tokens, and two orientations of the green <code>X2</code> tile, which numbered revenue centres.</figcaption>
+</figure>
+<p>For the first orientation, only revenue centre #1 preserves the <em>QLS</em> connectivity, and only revenue centre #3 preserves the <em>LPR</em> connectivity.
+For the second orientation, only revenue centre #3 preserves the connectivity of <em>QPS</em> and <em>LPR</em>.
+The flow networks for these two orientations of the <code>X2</code> tile are shown in <em>Figure 8</em>.
+It is clear that the first orientation <strong>can</strong> preserve the token connectivity, and that the second orientation <strong>cannot</strong> preserve the token connectivity because revenue centre #3 can only hold one token.</p>
+<figure>
+  <img src="https://robmoss.github.io/images/18xx-montreal-x2-flow-networks.png" alt="Montreal X2 tile flow networks"/>
+  <figcaption><strong>Figure 8:</strong> Flow networks for the two orientations of the green <code>X2</code> tile.</figcaption>
+</figure>
+<h2 id="an-overview-of-the-algorithm">An overview of the algorithm</h2>
+<p>We can divide the problem of placing tokens on the new tile into the following steps:</p>
+<ol>
+<li>
+<p>For each token on the original tile:</p>
+<p>a) Identify the tile faces to which it is connected; and</p>
+<p>b) Identify each revenue centre on the new tile that has these connections.</p>
+</li>
+<li>
+<p>Construct a flow network that contains:</p>
+<ul>
+<li>A node for each token on the original tile;</li>
+<li>A node for each revenue centre on the new tile;</li>
+<li>A connection from the source node to each token node, with capacity 1.</li>
+<li>Connections from each token to the revenue centres identified in step 1b, with capacity 1; and</li>
+<li>A connection from each revenue centre node to the sink node, with capacity equal to <em>the number of token spaces</em> in that revenue centre.</li>
+</ul>
+</li>
+<li>
+<p>Calculate the maximum flow using any one of the many published algorithms.</p>
+</li>
+</ol>
+<p>If the flow is equal to the number of tokens, the tokens can be placed on the new tile.
+Each non-zero flow from a token node to a revenue centre node indicates that the token should be placed in the corresponding revenue centre.</p>
+<h2 id="a-slightly-more-complicated-example">A slightly more complicated example</h2>
+<p>Consider the green <code>X2</code> tile with placed tokens, and the two orientations of the brown <code>X7</code> tile, shown in <em>Figure 9</em>. Does either orientation of the <code>X7</code> tile allow us to preserve the connectivity of the tokens placed on the <code>X2</code> tile?</p>
+<figure>
+  <img src="https://robmoss.github.io/images/18xx-montreal-x7-numbered.png" alt="Montreal X7 tile"/>
+  <figcaption><strong>Figure 9:</strong> The green <code>X2</code> tile with placed tokens, and two orientations of the brown <code>X7</code> tile, which numbered revenue centres.</figcaption>
+</figure>
+<p>Using the same approach as before, we can construct flow networks for each orientation of the <code>X7</code> tile.
+These flow networks are shown in <em>Figure 10</em>.
+We can see that both orientations <strong>can</strong> preserve the token connectivity.</p>
+<figure>
+  <img src="https://robmoss.github.io/images/18xx-montreal-x7-flow-networks.png" alt="Montreal X7 tile flow networks"/>
+  <figcaption><strong>Figure 10:</strong> Flow networks for the two orientations of the brown <code>X7</code> tile.</figcaption>
+</figure>
+<h2 id="final-remarks">Final remarks</h2>
+<p>I have only shown simple examples where for each token, only one revenue centre is able to preserve its connectivity.
+When multiple revenue centres can preserve a token's connectivity, the token's node will have multiple outflow edges.
+If there are multiple tokens that have more than one outflow edge, the flow network can be sufficiently complex that is hard to determine whether a solution exists from a visual inspection of the network.
+These are the situations where being able to apply a well-known algorithm provides the greatest advantage to implementing your own solution from scratch.</p>
+<p>All of the tile figures were <a href="https://github.com/robmoss/robmoss.github.io/tree/master/supporting-materials/change-the-problem/src/main.rs">generated</a> using my <a href="https://github.com/robmoss/rusty_train">navig18xx Rust library</a>, which provides a graphical user interface for constructing 18xx maps and identifying optimal train routes.
+It's roughly 28,000 lines of Rust code, and probably the single biggest piece of code I've written to date.
+The size of the code base was one reason I wanted to find an off-the-shelf solution for this problem.</p>
+
+  </article>
+<footer class="site">
+    <a href="http://www.ardischeng.com/">icons by ardis</a>&nbsp;/ <a href="https:&#x2F;&#x2F;github.com&#x2F;robmoss&#x2F;robmoss.github.io&#x2F;tree&#x2F;master&#x2F;content/blog&#x2F;2022-11-07-Change-the-problem-18XX-token-placement.md">source</a></footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Models</title>
+    <link rel="stylesheet" href="https://robmoss.github.io/css/base.css"/>
+    <link rel="stylesheet" href="https://robmoss.github.io/css/syntax-theme.css"/>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    
+  </head>
+<body><header class="site">
+  <nav>
+    <ul><li><a title="Home" class="inactive" href="https://robmoss.github.io/"><picture>
+            <source srcset="https://robmoss.github.io/images/home.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_home.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Home" src="https://robmoss.github.io/images/home.png"/>
+      </picture></a></li><li><a title="Research" class="inactive" href="https://robmoss.github.io/research/"><picture>
+            <source srcset="https://robmoss.github.io/images/influenza.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_influenza.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Research" src="https://robmoss.github.io/images/influenza.png"/>
+      </picture></a></li><li><a title="Teaching" class="inactive" href="https://robmoss.github.io/teaching/"><picture>
+            <source srcset="https://robmoss.github.io/images/teaching.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_teaching.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Teaching" src="https://robmoss.github.io/images/teaching.png"/>
+      </picture></a></li><li><a title="Models" class="active" href="https://robmoss.github.io/models/"><picture>
+            <source srcset="https://robmoss.github.io/images/model.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_model.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Models" src="https://robmoss.github.io/images/model.png"/>
+      </picture></a></li><li><a title="Blog" class="inactive" href="https://robmoss.github.io/blog/"><picture>
+            <source srcset="https://robmoss.github.io/images/info.png" media="(prefers-color-scheme: light)"/>
+            <source srcset="https://robmoss.github.io/images/dark_info.png" media="(prefers-color-scheme: dark)"/>
+            <img alt="Blog" src="https://robmoss.github.io/images/info.png"/>
+      </picture></a></li></ul>
+  </nav>
+</header>
+
+<h1 id="models">Models</h1>
+<div class="blurb">
+  Model source code, documentation, and interactive plots.
+  All code presented here is made available under permissive licenses.
+  Please check each respository for details.
+<nav>
+    <a href="https://bitbucket.org/robmoss/" title="Bitbucket profile"><img src="/images/logo-bb.png"></a>
+    <a href="http://github.com/robmoss/" title="Github profile"><img src="/images/logo-gh.png"></a>
+    <a href="https://gitlab.unimelb.edu.au/rgmoss/" title="Gitlab profile"><img src="/images/logo-gl.png"></a>
+  </nav>
+  <!-- NOTE: the following is HTML, not Markdown, to avoid it becoming a paragraph and having undesired vertical space above and below. -->
+  I am currently working on <a href="https://git-is-my-lab-book.net/">Git is my lab book</a>, a collection of materials to support early- and mid-career researchers who want to develop their computing skills and make effective use of available tools and infrastructure.
+</div>
+<h2 id="a-user-s-guide-to-infectious-disease-modelling">A User's Guide to Infectious Disease Modelling</h2>
+<p>The PRISM<sup>2</sup> CRE published <a href="https://prism.edu.au/publications/prism-modeling-guideline/">A User's Guide to Infectious Disease Modelling</a> in 2016.
+This provides an introduction to interpreting the results of mathematical modelling studies in epidemiology.
+The primary target audience is policy makers who want to capitalise on these kinds of studies to inform immunisation policy and the control of vaccine preventable diseases.</p>
+<h2 id="interactive-epidemic-models">Interactive epidemic models</h2>
+<ul>
+<li>
+<p>This <a href="https://robmoss.github.io/seir-demo/">interactive SEIR demo</a> illustrates how epidemiological parameters, such as the basic reproduction number, affect the size and duration of an epidemic.</p>
+</li>
+<li>
+<p>This <a href="https://robmoss.github.io/sir-demo/">interactive SIR demo</a> illustrates how outbreaks in small populations are driven by stochastic events.
+It is designed for use in a talk or presentation, where the model population size can be set to the number of people in the audience \(N\), each of whom should be given a unique number from \({1 \dots N}\).
+A <a href="https://robmoss.github.io/sir-demo/simple.html">simplified interface</a> is also provided.</p>
+</li>
+<li>
+<p>The <a href="https://nrich.maths.org/">NRICH Project</a> offers a variety of <a href="https://nrich.maths.org/epidemic">interactive teaching resources</a>.</p>
+</li>
+</ul>
+<h2 id="renal-physiology-models">Renal physiology models</h2>
+<p>Before I came to infectious diseases epidemiology, I modelled how kidneys regulate water and salt balance.</p>
+<ul>
+<li>
+<p>I developed a whole-kidney model that predicted steady-state salt and water excretion rates in response to renal pressure and circulating hormone levels, as illustrated in these <a href="https://robmoss.github.io/models/rfc/">interactive plots</a>.</p>
+</li>
+<li>
+<p>I added an explicit glomerular capillary bed to an existing model of afferent arteriole autoregulation, in order to predict the <a href="https://robmoss.github.io/models/aa-autoreg/">glomerular filtration rate</a>.</p>
+</li>
+</ul>
+<h2 id="making-models-accessible-and-useful">Making models accessible and useful</h2>
+<p>As mathematical models grow larger and more complex they become harder to analyse and understand.
+Once a model is sufficiently complex, the likelihood of someone being able to replicate its behaviour based on the model description in a publication becomes negligible.
+Making the model source code available is necessary <strong>but insufficient</strong> to render a model comprehensible.
+This has led to a proliferation of <a href="https://sed-ml.org/">semantic</a> <a href="https://sbml.org/">markup</a> <a href="https://www.cellml.org/">languages</a> and <a href="https://co.mbine.org/standards/miriam">detailed</a> <a href="https://co.mbine.org/standards/miase">guidelines</a> for describing models and <em>in silico</em> experiments.</p>
+<p>The importance of clear, concise and <a href="https://diataxis.fr/">helpful</a> <a href="https://web.archive.org/web/20200606231144/https://documentation.divio.com/">documentation</a> is <a href="https://web.archive.org/web/20200618075304/https://jacobian.org/tags/great-documentation/">paramount</a> to ensuring a published model and results can be <strong>replicated independently</strong> of the original model implementation.
+It can be hard to write <a href="http://web.archive.org/web/20170614175347/http://www.americanscientist.org/issues/id.877,y.0,no.,content.true,page.1,css.print/issue.aspx">good prose</a> and to <em>teach</em> the user rather than simply <a href="http://stevelosh.com/blog/2013/09/teach-dont-tell/">telling them</a> what to do.
+Explanations can be <a href="https://web.archive.org/web/20210819195037/https://jvns.ca/blog/confusing-explanations/">confusing and difficult to understand</a>.
+That's why it's important a have good editor; only edit the documentation <a href="http://web.archive.org/web/20140616001452/http://lifehacker.com/5968996/how-to-edit-your-own-writing/all">yourself</a> as a last resort.
+Good documentation means that your model/software is <a href="http://brikis98.blogspot.com.tr/2014/05/you-are-what-you-document.html">learnable</a>.</p>
+
+<footer class="site">
+    <a href="http://www.ardischeng.com/">icons by ardis</a>&nbsp;/ <a href="https:&#x2F;&#x2F;github.com&#x2F;robmoss&#x2F;robmoss.github.io&#x2F;tree&#x2F;master&#x2F;content/models.md">source</a></footer>
+</body>
+</html>
