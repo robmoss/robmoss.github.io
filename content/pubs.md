@@ -12,6 +12,11 @@ maths = true
 ## Preprints
 
 <li class="epi">
+  <a href="https://doi.org/10.48550/arXiv.2511.16096">Modelling the impact of improving access to healthcare on Hepatitis B prevalence in the Thai-Myanmar border region</a><br/>
+  <span class="author">Pham AD, <strong>Moss R</strong>, Pan-ngum W, McGready R, Geard N</span><br/>
+  <span class="journal"><em>Preprint</em>.</span><br/>
+</li>
+<li class="epi">
   <a href="https://doi.org/10.1101/2025.09.10.25335544">Ensemble forecasts of COVID-19 activity to support Australia's pandemic response: 2020-22</a><br/>
   <span class="author"><strong>Moss R</strong>&#9993;, Tobin RJ, O'Hara-Wild M, Adekunle AI, Liu D, South T, Morris DJ, Ryan GE, Hao T, Babu A, Senior KL, Wood JG, Golding N, Ross JV, Dawson P, Hyndman RJ, Price DJ<sup>&dagger;</sup>, McCaw JM<sup>&dagger;</sup>, Shearer FM<sup>&dagger;</sup></span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
@@ -27,11 +32,6 @@ maths = true
   <span class="journal"><em>Preprint</em>.</span><br/>
 </li>
 <li class="epi">
-  <a href="https://doi.org/10.1101/2025.05.08.25327032">The role of the spleen in red blood cell loss caused by malaria: a mathematical model</a><br/>
-  <span class="author"><strong>Moss R</strong><sup>&dagger;</sup>, Dini S<sup>&dagger;</sup>, Kho S, Barber BE, Buffet PA, Rajasekhar M, Price DJ, Anstey NA<sup>&dagger;</sup>&#9993;, Simpson JA<sup>&dagger;</sup>&#9993;</span><br/>
-  <span class="journal"><em>Preprint</em>.</span><br/>
-</li>
-<li class="epi">
   <a href="https://doi.org/10.48550/arXiv.2405.13239">Jump-Switch-Flow: hybrid stochastic-deterministic solutions of compartmental models</a><br/>
   <span class="author">Germano DPJ<sup>&dagger;</sup>, Zarebski AE<sup>&dagger;</sup>, Hautphenne S, <strong>Moss R</strong>, Flegg JA, Flegg MB</span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
@@ -40,6 +40,14 @@ maths = true
   <a href="https://doi.org/10.1101/797878">A sub-exponential branching process to study early epidemic dynamics with application to Ebola</a><br/>
   <span class="author">Zarebski AE&#9993;, <strong>Moss R</strong>, McCaw JM</span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
+</li>
+
+## 2026
+
+<li class="epi">
+  <a href="https://doi.org/10.1371/journal.pcbi.1013865">The role of the spleen in red blood cell loss caused by malaria: a mathematical model</a><br/>
+  <span class="author"><strong>Moss R</strong><sup>&dagger;</sup>, Dini S<sup>&dagger;</sup>, Kho S, Barber BE, Buffet PA, Rajasekhar M, Price DJ, Anstey NA<sup>&dagger;</sup>&#9993;, Simpson JA<sup>&dagger;</sup>&#9993;</span><br/>
+  <span class="journal"><strong>PLoS Comp Biol</strong>, 22(1), 2026.</span><br/>
 </li>
 
 ## 2025
