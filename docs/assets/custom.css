@@ -1,0 +1,36 @@
+/* Arrange research network logos horizontally */
+.icon-list {
+    text-align: center
+}
+.icon-list .network-logo {
+    vertical-align: middle;
+    max-width: 8em;
+    max-height: 4em;
+    margin: 0;
+    padding: 0;
+}
+.icon-list a ~ a {
+    margin-left: 1em;
+}
+
+/* Arrange software package icons */
+.software-icon {
+    vertical-align: middle;
+    margin-right: 1em;
+}
+
+/* Add colour to emphasised text, used frequently in blog articles */
+em {
+    color: var(--md-accent-fg-color);
+}
+
+/* Increase the width of figure captions (default is 24 rem) */
+.md-typeset figcaption {
+    max-width: 32rem;
+}
+
+/* Hide bullets when listing publications */
+ul.publication-list li {
+    list-style: none;
+    padding-left: 0;
+}

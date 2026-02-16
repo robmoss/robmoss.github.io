@@ -1,0 +1,33 @@
+# Blog
+
+- [Venables Award](venables-award.md); 14 Jan 2025
+- [R Markdown: hide code blocks](r-markdown-hide-code-blocks.md); 12 Nov 2024
+- [R functions as knitr chunks](r-functions-as-knitr-chunks.md); 1 Sep 2023
+- [Change the problem: 18XX token placement](change-the-problem-18xx-token-placement.md); 7 Nov 2022
+- [Model answers or trivial pursuits?](model-answers-or-trivial-pursuits.md); 21 May 2020
+- [Melbourne Maths and Science Meetup](melbourne-maths-and-science-meetup.md); 28 Feb 2019
+- [HOW-TO: Create a MATLAB Virtual Machine](how-to-create-a-matlab-vm.md); 6 Oct 2018
+- [Live coding, Emacs, and ghci](live-coding-emacs-and-ghci.md); 19 Feb 2018
+- [No single-biggest roadblock](no-single-biggest-roadblock.md); 15 Jan 2018
+- [Epidemic forecasts as a tool for public health](epidemic-forecasts-as-a-tool-for-public-health.md); 4 Jan 2018
+- [Disease surveillance: no silver bullet](disease-surveillance-no-silver-bullet.md); 3 Nov 2017
+- [Compartmental models in Rust](compartmental-models-in-rust.md); 26 Oct 2017
+- [Model selection for seasonal influenza forecasting](model-selection-for-seasonal-influenza-forecasting.md); 19 Jan 2017
+- [Interactive SEIR model](interactive-seir-model.md); 20 Dec 2016
+- [A week is a long time in politics](a-week-is-a-long-time-in-politics.md); 12 Jun 2016
+- [Virtual model environment](virtual-model-environment.md); 12 Jun 2015
+- [Flu forecasts for Melbourne](flu-forecasts-for-melbourne.md); 9 May 2015
+- [Afferent arteriole autoregulation](afferent-arteriole-autoregulation.md); 22 Feb 2014
+- [Pressure natriuresis in diuresis and antidiuresis](pressure-natriuresis-in-diuresis-and-antidiuresis.md); 21 Feb 2014
+- [Hormonal regulation of salt and water excretion](hormonal-regulation-of-salt-and-water-excretion.md); 15 Jan 2014
+- [Evolution and chronic kidney disease](evolution-and-chronic-kidney-disease.md); 15 Nov 2013
+- [Biological modelling and domain-specific languages](biological-modelling-and-domain-specific-languages.md); 1 Jun 2012
+- [Ethics and organ donation](ethics-and-organ-donation.md); 1 Feb 2012
+- [Distribution of SNGFR in the cortex](distribution-of-sngfr-in-the-cortex.md); 11 Nov 2011
+- [Placebo effects and surgical superstitions](placebo-effects-and-surgical-superstitions.md); 19 Oct 2011
+- [Renal function, IgA nephropathy and tumours](renal-function-iga-nephropathy-and-tumours.md); 8 Oct 2011
+- [Tools for statistical analysis](tools-for-statistical-analysis.md); 21 Sep 2011
+- [Renal vasculature](renal-vasculature.md); 14 Sep 2011
+- ["Positive" results ...](positive-results.md); 14 Sep 2011
+- [Renal oxygen consumption](renal-oxygen-consumption.md); 31 Aug 2011
+- [Whole-kidney models](whole-kidney-models.md); 30 Aug 2011
