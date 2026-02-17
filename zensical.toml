@@ -305,6 +305,11 @@ link = "mailto:rgmoss@unimelb.edu.au"
 name = "My email address"
 
 [[project.extra.social]]
+icon = "lucide/file-user"
+link = "cv_online.pdf"
+name = "My curriculum vitæ"
+
+[[project.extra.social]]
 icon = "fontawesome/brands/mastodon"
 link = "https://mas.to/@rob_models"
 name = "My Mastodon profile"
