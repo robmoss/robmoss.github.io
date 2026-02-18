@@ -22,9 +22,9 @@ The primary target audience is policy makers who want to capitalise on these kin
 
 Before I came to infectious diseases epidemiology, I modelled how kidneys regulate water and salt balance.
 
-- I developed a whole-kidney model that predicted steady-state salt and water excretion rates in response to renal pressure and circulating hormone levels, as illustrated in these [interactive plots](https://robmoss.github.io/models/rfc/).
+- I developed a whole-kidney model that predicted steady-state salt and water excretion rates in response to renal pressure and circulating hormone levels, as illustrated in these [interactive plots](rfc.md).
 
-- I added an explicit glomerular capillary bed to an existing model of afferent arteriole autoregulation, in order to predict the [glomerular filtration rate](https://robmoss.github.io/models/aa-autoreg/).
+- I added an explicit glomerular capillary bed to an existing model of afferent arteriole autoregulation, in order to predict the [glomerular filtration rate](aa-autoreg.md).
 
 ## :ardis-computer: Making models useful
 

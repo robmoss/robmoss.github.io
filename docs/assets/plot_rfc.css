@@ -1,0 +1,105 @@
+/*****************************************************************************
+  Interactive renal function curve plots.
+*****************************************************************************/
+
+/* Layout and spacing of the plot container. */
+.rfc_plot {
+    text-align: center;
+    /* Add vertical space around figures. */
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+/* Floating tooltip appearance. */
+.tooltip {
+    font-size: 0.8rem;
+    line-height: 1.25em;
+    padding: 0.5em 0.75em; border-radius: 1em;
+    position: absolute;
+    background: inherit;
+    border: 2px solid currentcolor;
+    max-width: 30em;
+}
+
+/* Hide elements that will be revealed by scripts. */
+.showjs { display: none; }
+
+.plot svg { font-size: 0.875em; }
+.plot line, .plot .axis, .plot .xTicks, .plot .yTicks {
+    stroke: currentcolor;
+}
+.plot line.grid { stroke-width: 0.1; }
+.plot text { fill: currentcolor; }
+.plot .axis { stroke-width: 0.8; }
+.plot .xTicks, .plot .yTicks { stroke-width: 0.6; }
+.plot path {
+    stroke: var(--md-code-hl-keyword-color);
+    stroke-width: 2;
+    fill: none;
+}
+/* Note: the following rules are specific to renal function plots. */
+.plot path.model {
+    stroke: var(--md-code-hl-string-color);
+    stroke-width: 3;
+    fill: none;
+}
+.plot path.hull {
+    stroke: none;
+    fill: var(--md-code-hl-keyword-color);
+    opacity: 0.2;
+    pointer-events: none;
+}
+.plot rect.model { fill: var(--md-code-hl-string-color); }
+.plot rect.exp { fill: var(--md-code-hl-keyword-color); }
+.plot path#highlight {
+    stroke: var(--md-code-hl-special-color);
+    stroke-width: 5;
+}
+
+/*****************************************************************************
+  Plot legends, shown as fixed sidebars.
+*****************************************************************************/
+
+#plot-legend  {
+    position: fixed;
+    top: 14em;
+    left: 0em;
+    width: auto;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border-top-left-radius: 0em;
+    border-bottom-left-radius: 0em;
+    background: inherit;
+    border: 5px solid currentcolor;
+    border-left: 0;
+    font-size: 125%;
+}
+#plot-legend caption {
+    margin-bottom: 1em;
+}
+#plot-legend table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 1em 1em;
+    line-height: 1.5em;
+}
+#plot-legend th, #plot-legend td {
+    padding: 0.1em 0.25em;
+    padding-right: 1em;
+}
+#plot-legend th, #plot-legend .toggle {
+    text-align: center;
+}
+#plot-legend .odd {
+    background: inherit;
+}
+#plot-legend .even {
+    /* background: var(--bg-base); */
+    background: var(--md-accent-fg-color--transparent);
+}
+#plot-legend .showyes * {
+    color: var(--md-code-hl-string-color);
+}
+#plot-legend .showno * {
+    color: var(--md-code-hl-special-color);
+}

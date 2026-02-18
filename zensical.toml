@@ -11,10 +11,12 @@ copyright = """
 """
 extra_css = [
   "assets/custom.css",
+  "assets/plot_rfc.css",
   "assets/larger-admonitions.css",
   "https://unpkg.com/katex@0/dist/katex.min.css",
 ]
 extra_javascript = [
+  "assets/plot_rfc.js",
   "assets/katex.js",
   "https://unpkg.com/katex@0/dist/katex.min.js",
   "https://unpkg.com/katex@0/dist/contrib/auto-render.min.js",
@@ -28,7 +30,11 @@ nav = [
   { "Publications" = "pubs.md" },
   { "Projects" = "projects.md" },
   { "Teaching" = "teaching.md" },
-  { "Models" = "models.md" },
+  { "Models" = [
+      "models/index.md",
+      { "Acute Renal Function Curves" = "models/rfc.md" },
+      { "Afferent arteriole autoregulation" = "models/aa-autoreg.md" },
+  ]},
   { "Software" = "software.md" },
   { "Blog" = [
       "blog/index.md",
@@ -211,7 +217,7 @@ features = [
     # When navigation integration for the table of contents is enabled, it is
     # always rendered as part of the navigation sidebar on the left.
     # https://zensical.org/docs/setup/navigation/#navigation-integration
-    "toc.integrate",
+    #"toc.integrate",
 ]
 
 # Palette toggle for automatic mode
