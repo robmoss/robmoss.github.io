@@ -1,6 +1,8 @@
 ---
-title: Afferent arteriole autoregulation
+icon: ardis/renal
 ---
+
+# Afferent arteriole autoregulation
 
 This model extends the original autoregulatory model presented by [Feldberg et al.](http://www.ncbi.nlm.nih.gov/pubmed/7485545), adding an explicit glomerulus and calculating model SNGFR in addition to afferent flow.
 

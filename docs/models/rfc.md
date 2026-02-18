@@ -1,3 +1,7 @@
+---
+icon: ardis/renal
+---
+
 <script language="javascript">
 function hide_noscript() {
   var to_hide = document.getElementsByClassName("hidejs");
