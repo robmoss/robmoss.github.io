@@ -1,3 +1,5 @@
+# Models
+
 ## :ardis-teaching: A User's Guide to Infectious Disease Modelling
 
 The PRISM<sup>2</sup> CRE published [A User's Guide to Infectious Disease Modelling](https://prism.edu.au/publications/prism-modeling-guideline/) in 2016.
