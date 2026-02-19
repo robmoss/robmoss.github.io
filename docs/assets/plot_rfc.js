@@ -348,9 +348,9 @@ Plot.study_table = function(study_file, selector) {
     var label = table_div.append("span");
     var table = table_div.append("table")
         .attr("id", "refs").append("style", "margin: 0 auto;");
-    var captn = table.append("caption");
-    var thead = table.append("thead");
-    var tbody = table.append("tbody");
+    var captn = table.append("caption").attr("class", "md-typeset");
+    var thead = table.append("thead").attr("class", "md-typeset");
+    var tbody = table.append("tbody").attr("class", "md-typeset");
 
     show_table = function(d, i) {
         table.style("display", "block");
