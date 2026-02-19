@@ -61,18 +61,9 @@
 *****************************************************************************/
 
 #plot-legend  {
-    position: fixed;
-    top: 14em;
-    left: 0em;
-    width: auto;
-    padding: 0.5em;
-    border-radius: 0.5em;
-    border-top-left-radius: 0em;
-    border-bottom-left-radius: 0em;
     background: inherit;
-    border: 5px solid currentcolor;
-    border-left: 0;
     font-size: 125%;
+    padding-top: 2em;
 }
 #plot-legend caption {
     margin-bottom: 1em;

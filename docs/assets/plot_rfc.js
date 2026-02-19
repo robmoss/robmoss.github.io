@@ -347,7 +347,7 @@ Plot.study_table = function(study_file, selector) {
         .attr("id", "plot-legend");
     var label = table_div.append("span");
     var table = table_div.append("table")
-        .attr("id", "refs");
+        .attr("id", "refs").append("style", "margin: 0 auto;");
     var captn = table.append("caption");
     var thead = table.append("thead");
     var tbody = table.append("tbody");
@@ -361,20 +361,7 @@ Plot.study_table = function(study_file, selector) {
         label.style("display", "block");
     }
 
-    label.append("strong").text("Table 1")
-    label.append("span").text(" (")
-    label.append("a")
-        .text("show")
-        .attr("href", "javascript:;")
-        .on("click", show_table);
-    label.append("span").text(")");
-
-    captn.html("<strong>Table 1:</strong> Experimental studies in the rat (")
-    captn.append("a")
-        .text("hide")
-        .attr("href", "javascript:;")
-        .on("click", hide_table);
-    captn.append("span").text(").");
+    captn.html("<strong>Table 1:</strong> Experimental studies in the rat.");
 
     table._info = {};
     table._info.plots = [];
@@ -485,7 +472,9 @@ var height = 0.75 * width;
 var sm = { w: width - 75, h: height - 50,
            margin_x: 75, margin_y: 50 };
 
-var tbl = Plot.study_table("/assets/studies.csv", "body"),
+// Add the legend table to the left-hand navigation side bar.
+var tbl_sel = "div.md-sidebar--primary div.md-sidebar__inner";
+var tbl = Plot.study_table("/assets/studies.csv", tbl_sel),
     pjna = Plot.create("/assets/jna.csv", "/assets/jna_hull.csv",
                        sm, na_lbl, "#jna"),
     pjv = Plot.create("/assets/jv.csv", "/assets/jv_hull.csv",
