@@ -15,11 +15,6 @@
   <span class="journal"><em>Preprint</em>.</span><br/>
 </li>
 <li class="epi">
-  <a href="https://doi.org/10.1101/2025.08.06.25333104">Cost-effectiveness of immunising interventions to reduce respiratory syncytial virus disease burden in infants in Australia</a><br/>
-  <span class="author">Carlin JB<sup>&dagger;</sup>&#9993;, Marcato AJ<sup>&dagger;</sup>, Wang Y<sup>&dagger;</sup>, <strong>Moss R</strong>, Carville KS, Chen X, Oliver VL, Spirkoska V, Campbell PT, Price DJ, Carvalho N<sup>&dagger;</sup>, McVernon J<sup>&dagger;</sup></span><br/>
-  <span class="journal"><em>Preprint</em>.</span><br/>
-</li>
-<li class="epi">
   <a href="https://doi.org/10.1101/2025.05.22.25327965">A flexible agent-based modelling framework of multi-serotype pneumococcal carriage to evaluate vaccine strategies in large populations</a><br/>
   <span class="author">Tellioglu N, Price DJ, Chen X, Spirkoska V, Wang Y, <strong>Moss R</strong>, Carvalho N, Carville K, Campbell PT, McVernon J</span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
@@ -39,6 +34,11 @@
 ## :ardis-pathogen: 2026
 
 <ul class="publication-list">
+<li class="epi">
+  <a href="https://doi.org/10.1007/s40273-026-01601-8">Cost-effectiveness of immunising interventions to reduce respiratory syncytial virus disease burden in infants in Australia</a><br/>
+  <span class="author">Carlin JB<sup>&dagger;</sup>&#9993;, Marcato AJ<sup>&dagger;</sup>, Wang Y<sup>&dagger;</sup>, <strong>Moss R</strong>, Carville KS, Chen X, Oliver VL, Spirkoska V, Campbell PT, Price DJ, Carvalho N<sup>&dagger;</sup>, McVernon J<sup>&dagger;</sup></span><br/>
+  <span class="journal"> 2026.</span><br/>
+</li>
 <li class="epi">
   <a href="https://doi.org/10.1371/journal.pcbi.1013865">The role of the spleen in red blood cell loss caused by malaria: a mathematical model</a><br/>
   <span class="author"><strong>Moss R</strong><sup>&dagger;</sup>, Dini S<sup>&dagger;</sup>, Kho S, Barber BE, Buffet PA, Rajasekhar M, Price DJ, Anstey NA<sup>&dagger;</sup>&#9993;, Simpson JA<sup>&dagger;</sup>&#9993;</span><br/>
