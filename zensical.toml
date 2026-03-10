@@ -312,7 +312,7 @@ name = "My email address"
 
 [[project.extra.social]]
 icon = "lucide/file-user"
-link = "cv_online.pdf"
+link = "https://robmoss.github.io/cv_online.pdf"
 name = "My curriculum vitæ"
 
 [[project.extra.social]]
