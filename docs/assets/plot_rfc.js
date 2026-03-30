@@ -467,24 +467,29 @@ var md = { w: 560, h: 420, margin_x: 75, margin_y: 50 },
         y: "Volume Excretion (µL/min/gkwt)"
     };
 
-var width = document.getElementsByClassName('rfc_plot')[0].offsetWidth;
-var height = 0.75 * width;
-var sm = { w: width - 75, h: height - 50,
-           margin_x: 75, margin_y: 50 };
+var plot_elts = document.getElementsByClassName('rfc_plot');
 
-// Add the legend table to the left-hand navigation side bar.
-var tbl_sel = "div.md-sidebar--primary div.md-sidebar__inner";
-var tbl = Plot.study_table("/assets/studies.csv", tbl_sel),
-    pjna = Plot.create("/assets/jna.csv", "/assets/jna_hull.csv",
-                       sm, na_lbl, "#jna"),
-    pjv = Plot.create("/assets/jv.csv", "/assets/jv_hull.csv",
-                      sm, v_lbl, "#jv");
+// Only construct plots on page(s) with "rfc_plot" elements.
+if (plot_elts.length > 0) {
+    var width = plot_elts[0].offsetWidth;
+    var height = 0.75 * width;
+    var sm = { w: width - 75, h: height - 50,
+               margin_x: 75, margin_y: 50 };
 
-tbl.add_plot(pjna);
-tbl.add_plot(pjv);
+    // Add the legend table to the left-hand navigation side bar.
+    var tbl_sel = "div.md-sidebar--primary div.md-sidebar__inner";
+    var tbl = Plot.study_table("/assets/studies.csv", tbl_sel),
+        pjna = Plot.create("/assets/jna.csv", "/assets/jna_hull.csv",
+                           sm, na_lbl, "#jna"),
+        pjv = Plot.create("/assets/jv.csv", "/assets/jv_hull.csv",
+                          sm, v_lbl, "#jv");
 
-// Hide the warning about javascript being disabled.
-d3.selectAll(".hidejs").style("display", "none")
+    tbl.add_plot(pjna);
+    tbl.add_plot(pjv);
 
-// Show the javascript-generated content.
-d3.selectAll(".showjs").style("display", "block")
+    // Hide the warning about javascript being disabled.
+    d3.selectAll(".hidejs").style("display", "none")
+
+    // Show the javascript-generated content.
+    d3.selectAll(".showjs").style("display", "block")
+}
