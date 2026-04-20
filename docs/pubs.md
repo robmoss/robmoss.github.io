@@ -10,18 +10,8 @@
   <span class="journal"><em>Preprint</em>.</span><br/>
 </li>
 <li class="epi">
-  <a href="https://doi.org/10.1101/2025.09.10.25335544">Ensemble forecasts of COVID-19 activity to support Australia's pandemic response: 2020-22</a><br/>
-  <span class="author"><strong>Moss R</strong>&#9993;, Tobin RJ, O'Hara-Wild M, Adekunle AI, Liu D, South T, Morris DJ, Ryan GE, Hao T, Babu A, Senior KL, Wood JG, Golding N, Ross JV, Dawson P, Hyndman RJ, Price DJ<sup>&dagger;</sup>, McCaw JM<sup>&dagger;</sup>, Shearer FM<sup>&dagger;</sup></span><br/>
-  <span class="journal"><em>Preprint</em>.</span><br/>
-</li>
-<li class="epi">
   <a href="https://doi.org/10.1101/2025.05.22.25327965">A flexible agent-based modelling framework of multi-serotype pneumococcal carriage to evaluate vaccine strategies in large populations</a><br/>
   <span class="author">Tellioglu N, Price DJ, Chen X, Spirkoska V, Wang Y, <strong>Moss R</strong>, Carvalho N, Carville K, Campbell PT, McVernon J</span><br/>
-  <span class="journal"><em>Preprint</em>.</span><br/>
-</li>
-<li class="epi">
-  <a href="https://doi.org/10.48550/arXiv.2405.13239">Jump-Switch-Flow: hybrid stochastic-deterministic solutions of compartmental models</a><br/>
-  <span class="author">Germano DPJ<sup>&dagger;</sup>, Zarebski AE<sup>&dagger;</sup>, Hautphenne S, <strong>Moss R</strong>, Flegg JA, Flegg MB</span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
 </li>
 <li class="epi">
@@ -35,9 +25,19 @@
 
 <ul class="publication-list">
 <li class="epi">
+  <a href="https://doi.org/10.1101/2025.09.10.25335544">Ensemble forecasts of COVID-19 activity to support Australia's pandemic response: 2020-22</a><br/>
+  <span class="author"><strong>Moss R</strong>&#9993;, Tobin RJ, O'Hara-Wild M, Adekunle AI, Liu D, South T, Morris DJ, Ryan GE, Hao T, Babu A, Senior KL, Wood JG, Golding N, Ross JV, Dawson P, Hyndman RJ, Price DJ<sup>&dagger;</sup>, McCaw JM<sup>&dagger;</sup>, Shearer FM<sup>&dagger;</sup></span><br/>
+  <span class="journal"><strong>PLoS Comp Biol</strong>, accepted.</span><br/>
+</li>
+<li class="epi">
+  <a href="https://doi.org/10.48550/arXiv.2405.13239">Jump-Switch-Flow: hybrid stochastic-deterministic solutions of compartmental models</a><br/>
+  <span class="author">Germano DPJ<sup>&dagger;</sup>, Zarebski AE<sup>&dagger;</sup>, Hautphenne S, <strong>Moss R</strong>, Flegg JA, Flegg MB</span><br/>
+  <span class="journal"><strong>J Math Bio</strong>, accepted.</span><br/>
+</li>
+<li class="epi">
   <a href="https://doi.org/10.1007/s40273-026-01601-8">Cost-effectiveness of immunising interventions to reduce respiratory syncytial virus disease burden in infants in Australia</a><br/>
   <span class="author">Carlin JB<sup>&dagger;</sup>&#9993;, Marcato AJ<sup>&dagger;</sup>, Wang Y<sup>&dagger;</sup>, <strong>Moss R</strong>, Carville KS, Chen X, Oliver VL, Spirkoska V, Campbell PT, Price DJ, Carvalho N<sup>&dagger;</sup>, McVernon J<sup>&dagger;</sup></span><br/>
-  <span class="journal"> 2026.</span><br/>
+  <span class="journal"><strong>PharmacoEconomics</strong>, 2026.</span><br/>
 </li>
 <li class="epi">
   <a href="https://doi.org/10.1371/journal.pcbi.1013865">The role of the spleen in red blood cell loss caused by malaria: a mathematical model</a><br/>
