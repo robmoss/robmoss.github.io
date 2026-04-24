@@ -88,5 +88,5 @@ Solid lines show net stress \\(\sigma_e + \sigma_a\\) and dashed lines show acti
 
 ![Relationship between transmural pressure and normalised inner radius.](radius.png)
 /// caption
-<strong>Figure 3:</strong> The relationship between transmural pressure \\(P\\) and normalised inner radius \\(r_P\\), for three myogenic responses \\(\Psi_{MYO}(P)\\) with different slopes.
+<strong>Figure 3:</strong> The relationship between transmural pressure \\(P\\) and normalised inner radius \\(r_P\\), for three myogenic responses \\(\Psi_{MYO}\\) with different slopes.
 ///
