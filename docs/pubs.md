@@ -5,6 +5,16 @@
 
 <ul class="publication-list">
 <li class="epi">
+  <a href="https://hal.science/hal-05613841v1">hpci improves reproducibility of computational biology research by integrating Continuous Integration with High Performance Computing clusters</a><br/>
+  <span class="author">Menzies IJ&#9993;, Urng E, Bouras G, <strong>Moss R</strong>, Reeves J, Goldstein LD</span><br/>
+  <span class="journal"><em>Preprint</em>.</span><br/>
+</li>
+<li class="epi">
+  <a href="https://doi.org/10.64898/2026.05.12.26350999">Detecting simulated pathogen releases in a real-world health data set</a><br/>
+  <span class="author"><strong>Moss R</strong>&#9993;, Testolin MJ, Pitsaris C, Hill AM, Muscatello DJ, McCaw JM, Dawson P</span><br/>
+  <span class="journal"><em>Preprint</em>.</span><br/>
+</li>
+<li class="epi">
   <a href="https://doi.org/10.48550/arXiv.2511.16096">Modelling the impact of improving access to healthcare on Hepatitis B prevalence in the Thai-Myanmar border region</a><br/>
   <span class="author">Pham AD, <strong>Moss R</strong>, Pan-ngum W, McGready R, Geard N</span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
