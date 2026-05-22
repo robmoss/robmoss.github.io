@@ -5,6 +5,11 @@
 
 <ul class="publication-list">
 <li class="epi">
+  <a href="https://doi.org/10.64898/2026.05.18.26353544">Winter forecasting of respiratory viruses in Victoria Australia</a><br/>
+  <span class="author">Henderson AS&#9993;, <strong>Moss R</strong>, Adekunle AI, Ye H, O'Hara-Wild M, Eales O, Senior KL, Tobin RJ, Windecker SM, Golding N, Robinson EJ, Strachan J, Hyndman R, Dawson P, McCaw JM, McBryde ES, Shearer FM</span><br/>
+  <span class="journal"><em>Preprint</em>.</span><br/>
+</li>
+<li class="epi">
   <a href="https://hal.science/hal-05613841v1">hpci improves reproducibility of computational biology research by integrating Continuous Integration with High Performance Computing clusters</a><br/>
   <span class="author">Menzies IJ&#9993;, Urng E, Bouras G, <strong>Moss R</strong>, Reeves J, Goldstein LD</span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
