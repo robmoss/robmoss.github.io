@@ -26,7 +26,7 @@
 </li>
 <li class="epi">
   <a href="https://doi.org/10.1101/2025.05.22.25327965">A flexible agent-based modelling framework of multi-serotype pneumococcal carriage to evaluate vaccine strategies in large populations</a><br/>
-  <span class="author">Tellioglu N, Price DJ, Chen X, Spirkoska V, Wang Y, <strong>Moss R</strong>, Carvalho N, Carville K, Campbell PT, McVernon J</span><br/>
+  <span class="author">Tellioglu N, Price DJ, Chen X, Spirkoska V, Wang Y, <strong>Moss R</strong>, Carvalho N, Carville K, Campbell PT<sup>&dagger;</sup>, McVernon J<sup>&dagger;</sup></span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
 </li>
 <li class="epi">
@@ -40,9 +40,9 @@
 
 <ul class="publication-list">
 <li class="epi">
-  <a href="https://doi.org/10.48550/arXiv.2405.13239">Jump-Switch-Flow: hybrid stochastic-deterministic solutions of compartmental models</a><br/>
-  <span class="author">Germano DPJ<sup>&dagger;</sup>, Zarebski AE<sup>&dagger;</sup>, Hautphenne S, <strong>Moss R</strong>, Flegg JA, Flegg MB</span><br/>
-  <span class="journal"><strong>J Math Biol</strong>, accepted.</span><br/>
+  <a href="https://doi.org/10.1007/s00285-026-02409-y">A hybrid framework for compartmental models enabling simulation-based inference</a><br/>
+  <span class="author">Germano DPJ<sup>&dagger;</sup>, Zarebski AE<sup>&dagger;</sup>, Hautphenne S, <strong>Moss R</strong>, Flegg JA&#9993;, Flegg MB</span><br/>
+  <span class="journal"><strong>J Math Biol</strong>, 92, 2026.</span><br/>
 </li>
 <li class="epi">
   <a href="https://doi.org/10.1371/journal.pcbi.1014199">Ensemble forecasts of COVID-19 activity to support Australia's pandemic response: 2020-22</a><br/>
