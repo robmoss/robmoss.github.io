@@ -33,11 +33,12 @@ See my [Software](software.md) page for details.
 ## :ardis-info: Networks
 
 <div class="icon-list" markdown>
-[![ACEFA](/images/network-acefa.png){ width=128 class="network-logo" }](https://acefa-epi-analytics.org/)
-[![APPRISE](/images/network-apprise.png){ width=128 class="network-logo" }](https://www.apprise.org.au/)
-[![SPECTRUM](/images/network-spectrum.png){ width=128 class="network-logo" }](https://www.spectrum.edu.au/)
-[![SPARK](/images/network-spark.png){ width=128 class="network-logo" }](https://www.spark.edu.au/)
-[![Flutracking](/images/network-flutracking.png){ width=128 class="network-logo" }](https://info.flutracking.net/)
-[![PRISM](/images/network-prism.jpg){ width=128 class="network-logo" }](https://www.prism.edu.au/)
-[![RSE-AUNZ](/images/network-rse-aunz.png){ width=49 class="network-logo" }](https://rse-aunz.github.io/)
+[![ACEFA](/images/network-acefa.png "ACEFA"){ width=128 class="network-logo" }](https://acefa-epi-analytics.org/)
+[![qMalaria](/images/network-qmalaria.png "qMalaria"){ width=50 class="network-logo" }](https://qmalaria.org/)
+[![APPRISE](/images/network-apprise.png "APPRISE"){ width=128 class="network-logo" }](https://www.apprise.org.au/)
+[![SPECTRUM](/images/network-spectrum.png "SPECTRUM"){ width=128 class="network-logo" }](https://www.spectrum.edu.au/)
+[![SPARK](/images/network-spark.png "SPARK"){ width=128 class="network-logo" }](https://www.spark.edu.au/)
+[![Flutracking](/images/network-flutracking.png "Flutracking"){ width=128 class="network-logo" }](https://info.flutracking.net/)
+[![PRISM](/images/network-prism.jpg "PRISM"){ width=128 class="network-logo" }](https://www.prism.edu.au/)
+[![RSE-AUNZ](/images/network-rse-aunz.png "RSE-AUNZ"){ width=49 class="network-logo" }](https://rse-aunz.github.io/)
 </div>
