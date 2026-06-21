@@ -12,4 +12,4 @@ Model simulations explore the regulation of renal function by aldosterone, angio
 This model of integrated renal function is quite successful in simulating renal function, although there are of course several caveats.
 The article also provides a broad survey of both renal modelling and the experimental literature.
 
-In addition to the manuscript itself, [interactive versions](../models.md) of a key figure&mdash;a comparison of model excretion rates against data from a number of experimental studies of acute pressure natriuresis in the rat&mdash;allow the viewer to examine each data series in isolation and refer back to the original articles.
+In addition to the manuscript itself, [interactive versions](../models/index.md) of a key figure&mdash;a comparison of model excretion rates against data from a number of experimental studies of acute pressure natriuresis in the rat&mdash;allow the viewer to examine each data series in isolation and refer back to the original articles.
