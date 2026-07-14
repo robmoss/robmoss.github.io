@@ -5,6 +5,11 @@
 
 <ul class="publication-list">
 <li class="epi">
+  <a href="https://doi.org/10.64898/2026.07.08.26357577">Cost-effectiveness of respiratory syncytial virus vaccination for older adults: a modelling analysis</a><br/>
+  <span class="author">Oliver VL<sup>&dagger;</sup>&#9993;, Carlin JB<sup>&dagger;</sup>, Wang Y<sup>&dagger;</sup>, Spirkoska V, Marcato A, Carville KS, <strong>Moss R</strong>, Price DJ, Campbell PT, McVernon J<sup>&dagger;</sup>, Carvalho N<sup>&dagger;</sup></span><br/>
+  <span class="journal"><em>Preprint</em>.</span><br/>
+</li>
+<li class="epi">
   <a href="https://doi.org/10.64898/2026.05.18.26353544">Winter forecasting of respiratory viruses in Victoria Australia</a><br/>
   <span class="author">Henderson AS&#9993;, <strong>Moss R</strong>, Adekunle AI, Ye H, O'Hara-Wild M, Eales O, Senior KL, Tobin RJ, Windecker SM, Golding N, Robinson EJ, Strachan J, Hyndman R, Dawson P, McCaw JM, McBryde ES, Shearer FM</span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
@@ -52,7 +57,7 @@
 <li class="epi">
   <a href="https://doi.org/10.1007/s40273-026-01601-8">Cost-effectiveness of immunising interventions to reduce respiratory syncytial virus disease burden in infants in Australia</a><br/>
   <span class="author">Carlin JB<sup>&dagger;</sup>&#9993;, Marcato AJ<sup>&dagger;</sup>, Wang Y<sup>&dagger;</sup>, <strong>Moss R</strong>, Carville KS, Chen X, Oliver VL, Spirkoska V, Campbell PT, Price DJ, Carvalho N<sup>&dagger;</sup>, McVernon J<sup>&dagger;</sup></span><br/>
-  <span class="journal"><strong>PharmacoEconomics</strong>, 2026.</span><br/>
+  <span class="journal"><strong>PharmacoEconomics</strong>, 44: 761-773, 2026.</span><br/>
 </li>
 <li class="epi">
   <a href="https://doi.org/10.1371/journal.pcbi.1013865">The role of the spleen in red blood cell loss caused by malaria: a mathematical model</a><br/>
