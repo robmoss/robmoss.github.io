@@ -1,9 +1,7 @@
 ---
 title: '"Positive" results ...'
 tags:
-  - philosophy
-  - of
-  - science
+  - philosophy of science
 ---
 This paper caught my eye a while back: <a href="https://doi.org/10.1371/journal.pone.0010068">"Positive" Results Increase Down the Hierarchy of the Sciences</a> (2010).
 To quote the abstract:

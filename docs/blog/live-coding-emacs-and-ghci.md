@@ -1,6 +1,7 @@
 ---
 title: Live coding, Emacs, and ghci
 tags:
+  - emacs
   - tutorial
 ---
 
