@@ -96,7 +96,7 @@ A "particle filter" might refer to a physical medium (e.g., air filtration) or t
 Wikipedia addresses this with [disambiguation](https://en.wikipedia.org/wiki/Wikipedia:Disambiguation) (links to different topics with similar names) and [redirection](https://en.wikipedia.org/wiki/Wikipedia:Redirect) (links to the same topic with a different name), but the onus is on the author to define these links.
 
 It would be great to somehow "discover" these links, instead.
-Perhaps the closest feature that I've seen is [GNU Hyperbole's](https://www.gnu.org/software/hyperbole/) implicit buttons, and the `HyWikiWord` implicit buttons in particular, which are [extremely powerful](https://www.chiply.dev/post-hyperbole-implicit-buttons).
+Perhaps the closest feature that I've seen is [GNU Hyperbole's](https://www.gnu.org/software/hyperbole/) implicit buttons, and the `HyWikiWord` implicit buttons in particular, which are [extremely powerful](https://www.chiply.dev/post-hyperbole-implicit-buttons) (thanks Charlie!).
 Perhaps disambiguation and redirection links could be implemented by implicit buttons that inspect links and backlinks to discover highly-connected subgroups of notes?
 This would presumably involve natural language processing (e.g., with [NLTK](https://www.nltk.org/)) for [disambiguation and semantic similarity](https://www.geeksforgeeks.org/nlp/semantic-analysis-with-nltk/).
 Maybe all of the necessary parts already exist and "just" need to be assembled?
