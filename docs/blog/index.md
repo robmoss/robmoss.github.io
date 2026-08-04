@@ -1,5 +1,6 @@
 # Blog
 
+- [Emacs Carnival: The Search for Knowledge](emacs-carnival-search-for-knowledge.md); 4 Aug 2026
 - [Venables Award](venables-award.md); 14 Jan 2025
 - [R Markdown: hide code blocks](r-markdown-hide-code-blocks.md); 12 Nov 2024
 - [R functions as knitr chunks](r-functions-as-knitr-chunks.md); 1 Sep 2023

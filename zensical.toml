@@ -38,6 +38,7 @@ nav = [
   { "Software" = "software.md" },
   { "Blog" = [
       "blog/index.md",
+      "blog/emacs-carnival-search-for-knowledge.md",
       "blog/venables-award.md",
       "blog/r-markdown-hide-code-blocks.md",
       "blog/r-functions-as-knitr-chunks.md",
