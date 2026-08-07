@@ -72,7 +72,7 @@ I refer to papers typically by DOI links and embed BibTeX entries, and sometimes
 I tend to have quite short notes for each paper, and primarily link to them from longer notes about broader topics, themes, ideas, and projects.
 The paper note itself is often only the BibTeX citation, the abstract, and/or some relevant quotes - a reminder.
 
-Inspired by Charles Choi's [causual](https://github.com/kickingvegas/casual/) project, I have considered designing a transient menu to encourage me to make more frequent use of my custom features, such as consulting **TODO** notes and projects.
+Inspired by Charles Choi's [Casual](https://github.com/kickingvegas/casual/) project, I have considered designing a transient menu to encourage me to make more frequent use of my custom features, such as consulting **TODO** notes and projects.
 I currently assign these notes to groups that are hidden by default, and need to use [consult's](https://github.com/minad/consult) narrowing feature to display them.
 But for now I've settled on a single **TODO** file with 1-3 short sentences for each item, and use links to relevant notes and other files (e.g., manuscripts, reviews, and code) that aren't in my knowledge base.
 
