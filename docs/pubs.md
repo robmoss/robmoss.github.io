@@ -45,6 +45,16 @@
 
 <ul class="publication-list">
 <li class="epi">
+  <a href="https://doi.org/10.1051/epjconf/202637802023">A structure-informed approach to analyzing scattering information</a><br/>
+  <span class="author">Fraser PR<sup>&dagger;</sup>, Bhattacharyya D<sup>&dagger;</sup>, Amos K<sup>&dagger;</sup>, Canton L<sup>&dagger;</sup>, Karataglidis S<sup>&dagger;</sup>, <strong>Moss R</strong><sup>&dagger;</sup>, Murulane K<sup>&dagger;</sup></span><br/>
+  <span class="journal"><strong>EPJ Web Conf</strong>, 378: 02023, 2026.</span><br/>
+</li>
+<li class="epi">
+  <a href="https://doi.org/10.1051/epjconf/202637802004">A multichannel algebraic scattering approach to study low-energy elastic scattering of protons from 12C</a><br/>
+  <span class="author">Bhattacharyya D<sup>&dagger;</sup>, Fraser PR<sup>&dagger;</sup>, Karataglidis S<sup>&dagger;</sup>, Amos K<sup>&dagger;</sup>, Canton L<sup>&dagger;</sup>, <strong>Moss R</strong><sup>&dagger;</sup></span><br/>
+  <span class="journal"><strong>EPJ Web Conf</strong>, 378: 02004, 2026.</span><br/>
+</li>
+<li class="epi">
   <a href="https://doi.org/10.1007/s00285-026-02409-y">A hybrid framework for compartmental models enabling simulation-based inference</a><br/>
   <span class="author">Germano DPJ<sup>&dagger;</sup>, Zarebski AE<sup>&dagger;</sup>, Hautphenne S, <strong>Moss R</strong>, Flegg JA&#9993;, Flegg MB</span><br/>
   <span class="journal"><strong>J Math Biol</strong>, 92, 2026.</span><br/>
@@ -93,6 +103,11 @@
   <a href="https://doi.org/10.21105/joss.06276">pypfilt: a particle filter for Python</a><br/>
   <span class="author"><strong>Moss R</strong>&#9993;</span><br/>
   <span class="journal"><strong>Journal of Open Source Software</strong>, 9(96): 6276, 2024.</span><br/>
+</li>
+<li class="epi">
+  <a href="https://doi.org/10.1051/epjconf/202429204005">A multichannel algebraic scattering approach to astrophysical reactions</a><br/>
+  <span class="author">Fraser PR<sup>&dagger;</sup>, Amos K<sup>&dagger;</sup>, Bertulani C<sup>&dagger;</sup>, Canton L<sup>&dagger;</sup>, Karataglidis S<sup>&dagger;</sup>, <strong>Moss R</strong><sup>&dagger;</sup>, Murulane K<sup>&dagger;</sup></span><br/>
+  <span class="journal"><strong>EPJ Web Conf</strong>, 292: 04005, 2024.</span><br/>
 </li>
 </ul>
 
