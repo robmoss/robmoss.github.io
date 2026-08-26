@@ -57,12 +57,12 @@
 <li class="epi">
   <a href="https://doi.org/10.1007/s00285-026-02409-y">A hybrid framework for compartmental models enabling simulation-based inference</a><br/>
   <span class="author">Germano DPJ<sup>&dagger;</sup>, Zarebski AE<sup>&dagger;</sup>, Hautphenne S, <strong>Moss R</strong>, Flegg JA&#9993;, Flegg MB</span><br/>
-  <span class="journal"><strong>J Math Biol</strong>, 92, 2026.</span><br/>
+  <span class="journal"><strong>J Math Biol</strong>, 92: 93, 2026.</span><br/>
 </li>
 <li class="epi">
   <a href="https://doi.org/10.1371/journal.pcbi.1014199">Ensemble forecasts of COVID-19 activity to support Australia's pandemic response: 2020-22</a><br/>
   <span class="author"><strong>Moss R</strong>&#9993;, Tobin RJ, O'Hara-Wild M, Adekunle AI, Liu D, South T, Morris DJ, Ryan GE, Hao T, Babu A, Senior KL, Wood JG, Golding N, Ross JV, Dawson P, Hyndman RJ, Price DJ<sup>&dagger;</sup>, McCaw JM<sup>&dagger;</sup>, Shearer FM<sup>&dagger;</sup></span><br/>
-  <span class="journal"><strong>PLoS Comp Biol</strong>, 22(4), 2026.</span><br/>
+  <span class="journal"><strong>PLoS Comp Biol</strong>, 22(4): e1014199, 2026.</span><br/>
 </li>
 <li class="epi">
   <a href="https://doi.org/10.1007/s40273-026-01601-8">Cost-effectiveness of immunising interventions to reduce respiratory syncytial virus disease burden in infants in Australia</a><br/>
@@ -72,7 +72,7 @@
 <li class="epi">
   <a href="https://doi.org/10.1371/journal.pcbi.1013865">The role of the spleen in red blood cell loss caused by malaria: a mathematical model</a><br/>
   <span class="author"><strong>Moss R</strong><sup>&dagger;</sup>, Dini S<sup>&dagger;</sup>, Kho S, Barber BE, Buffet PA, Rajasekhar M, Price DJ, Anstey NA<sup>&dagger;</sup>&#9993;, Simpson JA<sup>&dagger;</sup>&#9993;</span><br/>
-  <span class="journal"><strong>PLoS Comp Biol</strong>, 22(1), 2026.</span><br/>
+  <span class="journal"><strong>PLoS Comp Biol</strong>, 22(1): e1013865, 2026.</span><br/>
 </li>
 </ul>
 
