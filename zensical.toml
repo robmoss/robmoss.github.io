@@ -21,6 +21,7 @@ extra_javascript = [
   "https://unpkg.com/katex@0/dist/katex.min.js",
   "https://unpkg.com/katex@0/dist/contrib/auto-render.min.js",
 ]
+strict = true
 
 # ----------------------------------------------------------------------------
 # Website structure
