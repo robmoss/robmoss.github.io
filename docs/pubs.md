@@ -5,6 +5,11 @@
 
 <ul class="publication-list">
 <li class="epi">
+  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7589286">XemaPred: A fast and scalable computational framework for real-time forecasting of eczema severity</a><br/>
+  <span class="author">Le Floch P<sup>&dagger;</sup>, Duverdier A<sup>&dagger;</sup>, Oliviera S<sup>&dagger;</sup>, <strong>Moss R</strong>, Hurault G, Hameed T, Stalder JF, Saint Aroman M, Custovic A, Tanaka RJ&#9993;</span><br/>
+  <span class="journal"><em>Preprint</em>.</span><br/>
+</li>
+<li class="epi">
   <a href="https://doi.org/10.64898/2026.07.08.26357577">Cost-effectiveness of respiratory syncytial virus vaccination for older adults: a modelling analysis</a><br/>
   <span class="author">Oliver VL<sup>&dagger;</sup>&#9993;, Carlin JB<sup>&dagger;</sup>, Wang Y<sup>&dagger;</sup>, Spirkoska V, Marcato A, Carville KS, <strong>Moss R</strong>, Price DJ, Campbell PT, McVernon J<sup>&dagger;</sup>, Carvalho N<sup>&dagger;</sup></span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
@@ -25,11 +30,6 @@
   <span class="journal"><em>Preprint</em>.</span><br/>
 </li>
 <li class="epi">
-  <a href="https://doi.org/10.48550/arXiv.2511.16096">Modelling the impact of improving access to healthcare on Hepatitis B prevalence in the Thai-Myanmar border region</a><br/>
-  <span class="author">Pham AD, <strong>Moss R</strong>, Pan-ngum W, McGready R, Geard N</span><br/>
-  <span class="journal"><em>Preprint</em>.</span><br/>
-</li>
-<li class="epi">
   <a href="https://doi.org/10.1101/2025.05.22.25327965">A flexible agent-based modelling framework of multi-serotype pneumococcal carriage to evaluate vaccine strategies in large populations</a><br/>
   <span class="author">Tellioglu N, Price DJ, Chen X, Spirkoska V, Wang Y, <strong>Moss R</strong>, Carvalho N, Carville K, Campbell PT<sup>&dagger;</sup>, McVernon J<sup>&dagger;</sup></span><br/>
   <span class="journal"><em>Preprint</em>.</span><br/>
@@ -44,6 +44,11 @@
 ## :ardis-pathogen: 2026
 
 <ul class="publication-list">
+<li class="epi">
+  <a href="https://doi.org/10.1098/rsos.252337">Modelling the impact of improving access to healthcare on Hepatitis B prevalence in the Thai-Myanmar border region</a><br/>
+  <span class="author">Pham AD&#9993;, <strong>Moss R</strong>, Pan-ngum W, McGready R, Geard N</span><br/>
+  <span class="journal"><strong>R Soc Open Sci</strong>, 13(9): rsos252337, 2026.</span><br/>
+</li>
 <li class="epi">
   <a href="https://doi.org/10.1051/epjconf/202637802023">A structure-informed approach to analyzing scattering information</a><br/>
   <span class="author">Fraser PR<sup>&dagger;</sup>, Bhattacharyya D<sup>&dagger;</sup>, Amos K<sup>&dagger;</sup>, Canton L<sup>&dagger;</sup>, Karataglidis S<sup>&dagger;</sup>, <strong>Moss R</strong><sup>&dagger;</sup>, Murulane K<sup>&dagger;</sup></span><br/>
