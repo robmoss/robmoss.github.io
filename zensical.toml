@@ -39,38 +39,6 @@ nav = [
   { "Software" = "software.md" },
   { "Blog" = [
       "blog/index.md",
-      "blog/emacs-carnival-search-for-knowledge.md",
-      "blog/venables-award.md",
-      "blog/r-markdown-hide-code-blocks.md",
-      "blog/r-functions-as-knitr-chunks.md",
-      "blog/change-the-problem-18xx-token-placement.md",
-      "blog/model-answers-or-trivial-pursuits.md",
-      "blog/melbourne-maths-and-science-meetup.md",
-      "blog/how-to-create-a-matlab-vm.md",
-      "blog/live-coding-emacs-and-ghci.md",
-      "blog/no-single-biggest-roadblock.md",
-      "blog/epidemic-forecasts-as-a-tool-for-public-health.md",
-      "blog/disease-surveillance-no-silver-bullet.md",
-      "blog/compartmental-models-in-rust.md",
-      "blog/model-selection-for-seasonal-influenza-forecasting.md",
-      "blog/interactive-seir-model.md",
-      "blog/a-week-is-a-long-time-in-politics.md",
-      "blog/virtual-model-environment.md",
-      "blog/flu-forecasts-for-melbourne.md",
-      "blog/afferent-arteriole-autoregulation.md",
-      "blog/pressure-natriuresis-in-diuresis-and-antidiuresis.md",
-      "blog/hormonal-regulation-of-salt-and-water-excretion.md",
-      "blog/evolution-and-chronic-kidney-disease.md",
-      "blog/biological-modelling-and-domain-specific-languages.md",
-      "blog/ethics-and-organ-donation.md",
-      "blog/distribution-of-sngfr-in-the-cortex.md",
-      "blog/placebo-effects-and-surgical-superstitions.md",
-      "blog/renal-function-iga-nephropathy-and-tumours.md",
-      "blog/tools-for-statistical-analysis.md",
-      "blog/renal-vasculature.md",
-      "blog/positive-results.md",
-      "blog/renal-oxygen-consumption.md",
-      "blog/whole-kidney-models.md",
   ]},
 ]
 
@@ -269,6 +237,16 @@ line_spans = "__span"
 pygments_lang_class = true
 [project.markdown_extensions.pymdownx.inlinehilite]
 [project.markdown_extensions.pymdownx.superfences]
+# NOTE: add support for ^super^ and ~sub~ script.
+[project.markdown_extensions.pymdownx.caret]
+[project.markdown_extensions.pymdownx.tilde]
+
+# ----------------------------------------------------------------------------
+# Plugins
+# ----------------------------------------------------------------------------
+[project.plugins.blog]
+categories = true
+post_url_format = "{slug}"
 
 # ----------------------------------------------------------------------------
 # In the "font" subsection you can configure the fonts used. By default, fonts
