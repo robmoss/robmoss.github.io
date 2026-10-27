@@ -246,7 +246,7 @@ pygments_lang_class = true
 # ----------------------------------------------------------------------------
 [project.plugins.blog]
 categories = true
-post_url_format = "{slug}"
+post_url_format = "{file}"
 
 # ----------------------------------------------------------------------------
 # In the "font" subsection you can configure the fonts used. By default, fonts
